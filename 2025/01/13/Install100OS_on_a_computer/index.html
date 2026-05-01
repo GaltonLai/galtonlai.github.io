@@ -4,10 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="【修电脑Vlog】Surface Go3更新BIOS后开机慢，如何降级BIOS？, Galton Lai">
-    <meta name="description" content="Surface Go3更新BIOS后开机慢，如何降级BIOS？Author: GaltonLai
-Date: 2026-04-23
-Link: https://zhuanlan.zhihu.com/p/2030071541736666466">
+    <meta name="keywords" content="1台电脑100个系统，我是怎么做到的？, Galton Lai">
+    <meta name="description" content="1台电脑100个系统，我是怎么做到的？【回忆2020年的自己】那100个操作系统，我是如何安装到1台电脑上的？（看番外篇之前，建议大家还是看回我在B站上的的第50期视频。）
+Author: GaltonLai
+Date: 2026-05-0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +19,7 @@ Link: https://zhuanlan.zhihu.com/p/2030071541736666466">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>【修电脑Vlog】Surface Go3更新BIOS后开机慢，如何降级BIOS？ | Galton Lai的个人博客</title>
+    <title>1台电脑100个系统，我是怎么做到的？ | Galton Lai的个人博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -337,12 +337,12 @@ Link: https://zhuanlan.zhihu.com/p/2030071541736666466">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/pic/cover_SurfaceGo3BIOSissue.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/pic/cover_Install100OS.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">【修电脑Vlog】Surface Go3更新BIOS后开机慢，如何降级BIOS？</h1>
+                    <h1 class="description center-align post-title">1台电脑100个系统，我是怎么做到的？</h1>
                 </div>
             </div>
         </div>
@@ -366,24 +366,12 @@ Link: https://zhuanlan.zhihu.com/p/2030071541736666466">
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E4%BF%AE%E7%94%B5%E8%84%91/">
-                                <span class="chip bg-color">修电脑</span>
+                            <a href="/tags/%E5%AE%9E%E9%AA%8C%E6%8E%A2%E7%A9%B6/">
+                                <span class="chip bg-color">实验探究</span>
                             </a>
                         
-                            <a href="/tags/Surface/">
-                                <span class="chip bg-color">Surface</span>
-                            </a>
-                        
-                            <a href="/tags/BIOS/">
-                                <span class="chip bg-color">BIOS</span>
-                            </a>
-                        
-                            <a href="/tags/%E5%9B%BA%E4%BB%B6%E9%97%AE%E9%A2%98/">
-                                <span class="chip bg-color">固件问题</span>
-                            </a>
-                        
-                            <a href="/tags/%E5%BC%80%E6%9C%BA%E6%85%A2/">
-                                <span class="chip bg-color">开机慢</span>
+                            <a href="/tags/%E5%A4%9A%E7%B3%BB%E7%BB%9F/">
+                                <span class="chip bg-color">多系统</span>
                             </a>
                         
                     </div>
@@ -398,7 +386,7 @@ Link: https://zhuanlan.zhihu.com/p/2030071541736666466">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2026-04-13
+                    2025-01-13
                 </div>
                 
 
@@ -442,106 +430,58 @@ Link: https://zhuanlan.zhihu.com/p/2030071541736666466">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Surface-Go3更新BIOS后开机慢，如何降级BIOS？"><a href="#Surface-Go3更新BIOS后开机慢，如何降级BIOS？" class="headerlink" title="Surface Go3更新BIOS后开机慢，如何降级BIOS？"></a>Surface Go3更新BIOS后开机慢，如何降级BIOS？</h1><p><strong>Author:</strong> GaltonLai</p>
-<p><strong>Date:</strong> 2026-04-23</p>
-<p><strong>Link:</strong> <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/2030071541736666466">https://zhuanlan.zhihu.com/p/2030071541736666466</a></p>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>=&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;先说一下情况&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;</p>
-<p>各位大家好，2025年的时候我入手了一台Surface Go 3。</p>
-<p>这台Surface Go3更新了微软的<a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=273534913&content_type=Article&match_order=1&q=UEFI+BIOS&zhida_source=entity">UEFI BIOS</a>固件，开机长达1分多钟，将近2分钟。</p>
-<p><img src="https://pic3.zhimg.com/v2-470c903c5fbbb68df187d2386d90a6f4_1440w.jpg"></p>
-<p>开机将近2分钟</p>
-<p>一开始我开始排除电脑问题。</p>
-<p>我排除了外设问题，发现根本不是。</p>
-<p>我也重装了几次系统，没有解决。</p>
-<p>我尝试进入BIOS，发现BIOS界面也会卡死，可以确定大部分是微软推送的固件有问题。</p>
-<p><img src="https://pic4.zhimg.com/v2-6616365bd09717a3922fa5a91e0adfe5_1440w.jpg"></p>
-<p>进入BIOS时会卡死</p>
-<p>=&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;背景&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;</p>
-<p>在2025年9月，微软推送了16.106.143.0这个版本的固件，电脑开机就开始变得特别慢。</p>
-<p>在2025年12月，微软推送了16.110.143.0这个版本的固件，没有解决。</p>
-<p>在2026年1月，微软推送了17.103.143.0这个版本的固件，同样也没有解决。</p>
-<p>然后我就看到了微软论坛这位网友的方法，尝试降级，我这里也顺便把降级的经验分享出来。</p>
-<p><img src="https://pic3.zhimg.com/v2-7ac999193a574b215c70b02bc048ed7e_1440w.jpg"></p>
-<p>感谢这位微软论坛的网友</p>
-<p>=&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;需要准备的文件&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;</p>
-<p>1.一台能用的电脑</p>
-<p>2.一个U盘（和扩展坞）</p>
-<p>3.降级要用到的文件，可以在这里下载：</p>
-<p><a href="https://link.zhihu.com/?target=https://github.com/linux-surface/surface-uefi-firmware">Github网页中的surface-uefi-firmware</a></p>
-<p>4.Surface Go3的旧版驱动msi包，可以自行在微软官网下载，下载19044这个版本。</p>
-<p><a href="https://link.zhihu.com/?target=https://www.microsoft.com/en-us/download/details.aspx?id=103504">微软官网-Surface Go3驱动程序下载</a></p>
-<p>=&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;做法&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;</p>
-<p>这是我的操作流程，我的流程是这样的。</p>
-<p><img src="https://pic2.zhimg.com/v2-777a093a2981e7a79b7224891a682be5_1440w.jpg"></p>
-<p>操作流程</p>
-<h2 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h2><p>开始之前，先卸载UEFI相关的硬件驱动（这个驱动会自动更新UEFI固件，到时候又会变成开机慢的状态了）</p>
-<p>“此电脑”右键→管理→设备管理器→展开“固件”→找到Surface UEFI（有时候会显示成“固件设备”）→右键卸载→勾选“删除相关软件”→确定</p>
-<p><img src="https://pica.zhimg.com/v2-5788e5b86b5a89ac352d5f7b46f363ca_1440w.jpg"></p>
-<p>卸载Surface UEFI驱动</p>
-<p>然后屏蔽掉Windows更新</p>
-<p>我用的是<a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=273534913&content_type=Article&match_order=1&q=dism++&zhida_source=entity">dism++</a>这个软件→系统优化→勾选“更新不包含驱动程序”→Windows自动更新调整为“从不检查更新”</p>
-<p><img src="https://pic4.zhimg.com/v2-743349d58c593869782837947a53bde1_1440w.jpg"></p>
-<p>屏蔽掉Windows更新</p>
-<p>补充：原厂系统会预装“Surface”软件，这个软件也会更新驱动程序，最好也卸载掉。</p>
-<h2 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h2><p><strong>提前说明：如果你选择的系统制作成U盘启动盘之后，进入livecd之后没有问题，就不用那么复杂了，准备好材料直接第3步即可。</strong></p>
-<p>然后准备一个空U盘和一个Linux系统镜像，可以制作livecd也可以把整个Linux系统安装进U盘。（当然选择你熟悉的Linux系统就好了）</p>
-<p>我用的是<a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=273534913&content_type=Article&match_order=1&q=ubuntukylin22.04&zhida_source=entity">ubuntukylin22.04</a>，使用livecd时有时候会出现卡死，所以我这边就把U盘挂载进虚拟机，把U盘当做物理硬盘，这样虚拟机装系统的时候也顺理成章地把系统装进U盘了。</p>
-<p><img src="https://pic4.zhimg.com/v2-5d52f44f3719c5d72d751662e3db25f9_1440w.jpg"></p>
-<p>创建虚拟机时选择物理硬盘</p>
-<p><img src="https://pic3.zhimg.com/v2-2fb5bf68316a9df72c622de0d413ba98_1440w.jpg"></p>
-<p>打开cmd，通过diskpart然后list disk，查看U盘是几号盘，虚拟机设备就选择几号盘就行了。</p>
-<p><img src="https://picx.zhimg.com/v2-9284cab96b643cbbdb4b6c7b545ce351_1440w.jpg"></p>
-<p>通过虚拟机把系统装进U盘</p>
-<h2 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h2><p>制作好启动盘之后，通过扩展坞插入Surface Go3（因为机器就一个TypeC口），插好U盘之后同时按住电源键和音量上键（音量+）先进入BIOS</p>
-<p><img src="https://pic4.zhimg.com/v2-89fb2f96392477ebba079c7a280c2ee9_1440w.jpg"></p>
-<p>插入U盘</p>
-<p>关闭安全启动（否则Linux系统进不去）</p>
-<p>Security→Secure Boot按下“Change configuration”</p>
-<p><img src="https://pica.zhimg.com/v2-71551c86cf046c23acd64a2b4c373bd6_1440w.jpg"></p>
-<p>左侧导航栏Security</p>
-<p>弹出的界面选择“None”。</p>
-<p><img src="https://picx.zhimg.com/v2-5c41d6ffc0919d7ef83ea3e4f79f6143_1440w.jpg"></p>
-<p>关闭安全启动</p>
-<p>然后左侧导航栏Exit重启电脑。</p>
-<p>重启电脑的时候按下电源键和音量下键（音量-），让这个电脑引导U盘里面的Linux系统。</p>
-<p><img src="https://pic3.zhimg.com/v2-10c15eed19e4a189adb44d9b4e4acc94_1440w.jpg"></p>
-<p>U盘引导系统</p>
-<p>系统进来之后连接WIFI，然后更新软件包</p>
-<p>sudo apt-get update -y &amp;&amp; sudo apt install vim msitools gcab dos2unix -y</p>
-<p><img src="https://picx.zhimg.com/v2-06c72a7863d38e25af4c0cc6f42dae37_1440w.jpg"></p>
-<p>安装软件包</p>
-<h2 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h2><p>然后想方设法把降级要用到的文件和旧版驱动包导入进Linux系统里面，可以使用另外一个U盘传过来也可以用远程软件发送过来。</p>
-<p><img src="https://picx.zhimg.com/v2-6a52e196931ae1b79b9b2753361ab551_1440w.jpg"></p>
-<p>U盘有这2个文件</p>
-<h2 id="第五步"><a href="#第五步" class="headerlink" title="第五步"></a>第五步</h2><p>然后cd surface-uefi-firmware&#x2F;</p>
-<p>给里面的shell文件一个执行权限：chmod +x .&#x2F;surface-uefi-fireware&#x2F;repack.sh</p>
-<p>然后通过脚本把驱动包解压下来sudo .&#x2F;surface-uefi-fireware&#x2F;repack.sh (你存放的msi文件) -o <a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=273534913&content_type=Article&match_order=1&q=fwupd&zhida_source=entity">fwupd</a>ates</p>
-<p>（-o 表示解压时指定的文件夹）</p>
-<p><img src="https://pica.zhimg.com/v2-d6e36f4e2fae36ab202ac2334ed5eabc_1440w.jpg"></p>
-<p>解压驱动包</p>
-<p>解压下来的树形目录：tree fwupdates&#x2F;</p>
-<p><img src="https://pic1.zhimg.com/v2-abe522269364880ac4436029bda64cc8_1440w.jpg"></p>
-<p>解压下来的树形目录</p>
-<p>然后关闭数字签名：</p>
-<p>sudo vim &#x2F;etc&#x2F;fwupd&#x2F;daemon.conf（有的系统是 fwupd.conf）</p>
-<p>把OnlyTrusted&#x3D;true修改成OnlyTrusted&#x3D;false</p>
-<p><img src="https://pic3.zhimg.com/v2-2b24c0f1a5bb20fa7a1be73d0b683ccc_1440w.jpg"></p>
-<p>关闭数字签名检验</p>
-<p>然后是重头戏</p>
-<p>for f in fwupdates&#x2F;*; do</p>
-<p>sudo fwupdmgr install –allow-older –allow-reinstall –no-reboot-check “$f”</p>
-<p>done</p>
-<p>命令解析：这里是开始用fwupd来安装，我这里是写一条for循环结构，然后遍历安装每一个cab文件。</p>
-<p>但是其实也可以只装UEFI相关的这个文件，只不过不知道会不会出现旧版固件不兼容新版驱动的情况，所以我觉得稳妥一点就是全部遍历装一遍。</p>
-<p><img src="https://pic4.zhimg.com/v2-e9012751647b176ddc3fc11663a71c4f_1440w.jpg"></p>
-<p>安装旧版固件驱动</p>
-<p>安装成功之后reboot重启电脑。</p>
-<p>等电脑安装时会跑进度条，跑完之后进入BIOS，可以发现BIOS版本号降级成功。</p>
-<p><img src="https://picx.zhimg.com/v2-b8787c34748349de3e0f72960c6fbbf7_1440w.jpg"></p>
-<p>BIOS版本号降级成功</p>
-<p>之后电脑开机慢的问题解决了。</p>
-<p><img src="https://picx.zhimg.com/v2-4eed5db359082867c03836746248bd3f_1440w.jpg"></p>
-<p>降级后的开机速度</p>
+                <h1 id="1台电脑100个系统，我是怎么做到的？"><a href="#1台电脑100个系统，我是怎么做到的？" class="headerlink" title="1台电脑100个系统，我是怎么做到的？"></a>1台电脑100个系统，我是怎么做到的？</h1><p>【回忆2020年的自己】那100个操作系统，我是如何安装到1台电脑上的？<br>（看番外篇之前，建议大家还是看回我在B站上的的第50期视频。）</p>
+<p><strong>Author:</strong> GaltonLai</p>
+<p><strong>Date:</strong> 2026-05-01</p>
+<p><strong>Link:</strong> <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/2033688602731877885">https://zhuanlan.zhihu.com/p/2033688602731877885</a></p>
+<p>【回忆2020年的自己】那100个操作系统，我是如何安装到1台电脑上的？</p>
+<p>（这是我在B站上的的第50期视频，2025年1月13号，我也做过这期视频的番外篇，解析了一下原理和实现方法，这里我将会以文字的方式表述出来）</p>
+<p><a href="https://link.zhihu.com/?target=https://www.bilibili.com/video/BV18t4y1v7gB/">【全网首发】1个电脑，100个系统！！！[R.CPDS|v50]www.bilibili.com/video/BV18t4y1v7gB/</a></p>
+<h3 id="先提一下背景"><a href="#先提一下背景" class="headerlink" title="先提一下背景"></a>先提一下背景</h3><p>各位朋友大家好啊，我是GaltonLai（就是在B站上更新电脑系统相关视频的GaltonLai，当时叫RyanCPDS）。</p>
+<p>我曾经有在我的B站频道上，做了一部<strong>1台电脑安装100个操作系统</strong>的这个视频嘛。 那期视频已经是2020年10月份的了，所以也整整四五年的啦。 但是为什么我还要为这个视频做个番外篇？其实这个视频对我而言，还是比较<strong>意义重大</strong>的。 毕竟这个视频也许是我这个频道里面，<strong>工程量最大</strong>的一个视频。 而且我刚放寒假回来，刚好有时间。给大家分享一下我做这个视频的心得。 所以，开始吧。</p>
+<p>首先我给大家看看，这电脑是1TB的。然后我的移动硬盘是3TB的。当时我做这个实验我还记得当时安装100个操作系统我就安装到这个硬盘上的。</p>
+<h3 id="介绍脚本"><a href="#介绍脚本" class="headerlink" title="介绍脚本"></a>介绍脚本</h3><p>那是怎么装的呢？ 然后我记得就是再安装100个操作系统时我写了2个脚本，一个脚本是复制文件，然后添加系统引导的这个脚本，然后另外一个脚本就是复制这个字体的这个脚本。</p>
+<p>（有的配图我直接引用视频的啦~~~）</p>
+<p><img src="https://pic1.zhimg.com/v2-d7c6c60e23f8bff7ebc925aa64cb13d8_1440w.jpg"></p>
+<p>我的程序——先输入目录和克隆次数</p>
+<p><img src="https://pic4.zhimg.com/v2-5b75ca4a2f3ec0ebda9c57f501eb29b3_1440w.jpg"></p>
+<p>我的程序——确认信息（防止误操作）</p>
+<p><img src="https://pic3.zhimg.com/v2-4b56d0ddafc9317e711ed7d10d12ca38_1440w.jpg"></p>
+<p>我的程序——开始啦</p>
+<p><img src="https://pic2.zhimg.com/v2-1e0db307ad7b696b88822d5ddf9e074f_1440w.jpg"></p>
+<p>我的程序——结束啦</p>
+<p><img src="https://pic4.zhimg.com/v2-649b3fa8343868840c73950f3bda1d4b_1440w.jpg"></p>
+<p>当时的效果</p>
+<p><img src="https://pic4.zhimg.com/v2-4abf3c46dbefead959df49d755bc03db_1440w.jpg"></p>
+<p>克隆完后一个盘有1T之多</p>
+<p>就我做这个视频的时候呢，就是克隆完100个系统。就一进去（那些系统）它是没有字体的。然后对啊，然后我就要写新增字体的这个脚本。</p>
+<p><img src="https://pic3.zhimg.com/v2-83173dc36a649b50fed92ce3ea686270_1440w.jpg"></p>
+<p>没有字体</p>
+<p><img src="https://pic4.zhimg.com/v2-acb9bb62aab872869c90794a81c7d93d_1440w.jpg"></p>
+<p>当时就写了复制字体的脚本（当时没写好，别介意）</p>
+<p>然后我给大家介绍一下，这个1.exe是我做的这个英文版的克隆程序。这个Chinese1.exe呢就是我做的中文版，然后这个bcdedit就是来编辑这个引导文件的，然后下面还有一个说明就是注意必须放在C盘11的这个文件夹里（对啊，毕竟我当时就写了这个绝对路径嘛）</p>
+<p><img src="https://pic2.zhimg.com/v2-a280225d04d5ec230f9ed000864201e5_1440w.jpg"></p>
+<p>当时的文件</p>
+<p><img src="https://pic1.zhimg.com/v2-ec54a9c2e4584bc0f0262c087ab134ca_1440w.jpg"></p>
+<p>说明</p>
+<p><img src="https://picx.zhimg.com/v2-653ff7d3929ba8d01fae919415da7339_1440w.jpg"></p>
+<p>脚本的中文版（就是改个cout的事）</p>
+<p>我两个脚本都是用C++写的哦。毕竟相隔了5年，我这个克隆脚本的这个主脚本的C++源文件已经不见了。我给大家讲一讲原理吧。其实原理也挺简单的，就是一开始先问要克隆的系统路径在哪啊，克隆多少次啊。然后就通过一个for循环，复制文件，就是调用bcdedit来复制引导，复制了之后系统就会生成新的guid值，然后我这个c++的程序就会通过字符串提取的方式把guid提取出来，提取出来之后呢再通过bcdedit设置克隆系统的名称啊，引导的系统目录啊，系统引导文件的路径啊，反正一大堆东西</p>
+<p><img src="https://picx.zhimg.com/v2-1ab269c782475762e782acb5ba59f5b1_1440w.jpg"></p>
+<p>我反编译了自己的程序，说明其实我在拼接字符串而已</p>
+<p><img src="https://pic4.zhimg.com/v2-8c523a2886952e288721312006870d37_1440w.jpg"></p>
+<p>其实我是简单的调用windows.h库中的system命令而已</p>
+<p><img src="https://picx.zhimg.com/v2-b2a480a60b8c107fdb5441a0f2276685_1440w.jpg"></p>
+<p>当时运行的截图</p>
+<p>然后第二个脚本比较简单，就是简单的for语言循环，然后再通过拼接字符串的方式把复制命令拼接出来，生成一个bat文件，然后我再手动执行bat文件就可以了。</p>
+<p>我现在给大家再回顾一下操作的了，我当时是先通过win7和win8.1的双系统，然后再用win7来克隆win8.1这样子。</p>
+<p>然后，等我先装好win7和win8.1了。</p>
+<h3 id="当时的状态（有什么意义？）"><a href="#当时的状态（有什么意义？）" class="headerlink" title="当时的状态（有什么意义？）"></a>当时的状态（有什么意义？）</h3><p>装好系统之后，我开始克隆了。只要硬盘够大，不只是100个，1000，10000个，都是可以做到的。 感觉我回到了2020年，克隆的时候我给大家分享一下我当时的精神状态吧。</p>
+<p>我当时处于一个特别紧张的状态，我一开始就想开始复制的啦，当时我正在复制100个系统，要一直等，等得特别煎熬。 我不知道我的电脑硬盘能不能撑得住那长达十几个小时的读写操作？ 虚拟机能不能撑住？撑不住了，一中断就复制失败了。 中间复制失败了怎么办？我要不要重新来一遍？重新来一遍，要怎么办？ 我那个时候就是一直为了这个问题焦虑，我这十几个小时，连睡都没睡好。那个时候我的心一直悬着。</p>
+<p>后面我一直在想一台电脑安装100个操作系统，有什么意义？ 其实我也想不起来有什么意义，只能证明我有这个耐心和能力。 对我而言，安装100个操作系统，看似是一个疯狂的想法，但它背后蕴含着对技术极限的挑战。 在当今这个快速发展的科技时代，我们需要不断地突破常规，去尝试那些看似不可能的事情。 2020年，我成功安装了100个操作系统。这段经历教会了我，在不断尝试和挑战中积累经验、磨练意志的重要性。它成为了我成长道路上的关键节点，也是我视频频道的一个重要见证。它赋予了我面对未来各种挑战的自信。</p>
+<p>所以，我写这篇文章，我其实也想告诉大家，有了想法，勇敢去做。勇敢去突破自己。所以，朋友们，不要害怕尝试那些看似不可能的事情。也许你会失败很多次，但每一次失败都是成功的垫脚石。勇敢地去追求你的想法吧，因为你永远不知道，下一个突破极限的人，会不会就是你！</p>
+<p>（文笔不咋地，可能我在强行升华，但也就那样了）</p>
+<p>写自2025.1.13（调整于2026.5.1）</p>
 
                 
             </div>
@@ -568,7 +508,7 @@ Link: https://zhuanlan.zhihu.com/p/2030071541736666466">
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://galtonlai.github.io/2026/04/13/SurfaceGo3BIOSissue_GaltonLai/">http://galtonlai.github.io/2026/04/13/SurfaceGo3BIOSissue_GaltonLai/</a>
+                    <a href="http://galtonlai.github.io/2025/01/13/Install100OS_on_a_computer/">http://galtonlai.github.io/2025/01/13/Install100OS_on_a_computer/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -606,24 +546,12 @@ Link: https://zhuanlan.zhihu.com/p/2030071541736666466">
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E4%BF%AE%E7%94%B5%E8%84%91/">
-                                    <span class="chip bg-color">修电脑</span>
+                                <a href="/tags/%E5%AE%9E%E9%AA%8C%E6%8E%A2%E7%A9%B6/">
+                                    <span class="chip bg-color">实验探究</span>
                                 </a>
                             
-                                <a href="/tags/Surface/">
-                                    <span class="chip bg-color">Surface</span>
-                                </a>
-                            
-                                <a href="/tags/BIOS/">
-                                    <span class="chip bg-color">BIOS</span>
-                                </a>
-                            
-                                <a href="/tags/%E5%9B%BA%E4%BB%B6%E9%97%AE%E9%A2%98/">
-                                    <span class="chip bg-color">固件问题</span>
-                                </a>
-                            
-                                <a href="/tags/%E5%BC%80%E6%9C%BA%E6%85%A2/">
-                                    <span class="chip bg-color">开机慢</span>
+                                <a href="/tags/%E5%A4%9A%E7%B3%BB%E7%BB%9F/">
+                                    <span class="chip bg-color">多系统</span>
                                 </a>
                             
                         </div>
@@ -717,71 +645,9 @@ Link: https://zhuanlan.zhihu.com/p/2030071541736666466">
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
-            <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
-            <div class="card">
-                <a href="/2026/04/13/SurfaceGo3BIOSissue_GaltonLai/">
-                    <div class="card-image">
-                        
-                        <img src="/images/pic/cover_SurfaceGo3BIOSissue.png" class="responsive-img" alt="【修电脑Vlog】Surface Go3更新BIOS后开机慢，如何降级BIOS？">
-                        
-                        <span class="card-title">【修电脑Vlog】Surface Go3更新BIOS后开机慢，如何降级BIOS？</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2026-04-13
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            Galton Lai
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E4%BF%AE%E7%94%B5%E8%84%91/">
-                        <span class="chip bg-color">修电脑</span>
-                    </a>
-                    
-                    <a href="/tags/Surface/">
-                        <span class="chip bg-color">Surface</span>
-                    </a>
-                    
-                    <a href="/tags/BIOS/">
-                        <span class="chip bg-color">BIOS</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%9B%BA%E4%BB%B6%E9%97%AE%E9%A2%98/">
-                        <span class="chip bg-color">固件问题</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%BC%80%E6%9C%BA%E6%85%A2/">
-                        <span class="chip bg-color">开机慢</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
         <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
                 <a href="/2026/02/24/X50GT_model_issue/">
                     <div class="card-image">
@@ -798,9 +664,9 @@ Link: https://zhuanlan.zhihu.com/p/2030071541736666466">
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2026-02-24
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2026-02-24
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -830,6 +696,55 @@ Link: https://zhuanlan.zhihu.com/p/2030071541736666466">
                     
                     <a href="/tags/%E5%86%85%E9%83%A8%E5%9E%8B%E5%8F%B7/">
                         <span class="chip bg-color">内部型号</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
+            </div>
+            <div class="card">
+                <a href="/2025/01/13/Install100OS_on_a_computer/">
+                    <div class="card-image">
+                        
+                        <img src="/images/pic/cover_Install100OS.png" class="responsive-img" alt="1台电脑100个系统，我是怎么做到的？">
+                        
+                        <span class="card-title">1台电脑100个系统，我是怎么做到的？</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2025-01-13
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Galton Lai
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%AE%9E%E9%AA%8C%E6%8E%A2%E7%A9%B6/">
+                        <span class="chip bg-color">实验探究</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%A4%9A%E7%B3%BB%E7%BB%9F/">
+                        <span class="chip bg-color">多系统</span>
                     </a>
                     
                 </div>
