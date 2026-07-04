@@ -1,0 +1,1229 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="通过实体机的网络引导网盘内的系统？怎么做到的, Galton Lai">
+    <meta name="description" content="通过实体机的网络引导网盘内的系统？怎么做到的Author: GaltonLai
+Date: 2026-06-27
+Link: https://zhuanlan.zhihu.com/p/2054241718854329478
+大家好，近期我做">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>通过实体机的网络引导网盘内的系统？怎么做到的 | Galton Lai的个人博客</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    
+
+
+    <!-- bg-cover style     -->
+
+
+
+<link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+<link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+<link rel="stylesheet" type="text/css" href="/css/matery.css">
+<link rel="stylesheet" type="text/css" href="/css/my.css">
+<link rel="stylesheet" type="text/css" href="/css/dark.css" media="none" onload="if(media!='all')media='all'">
+
+
+
+
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/css/post.css">
+
+
+
+
+    
+        <link rel="stylesheet" type="text/css" href="/css/reward.css">
+    
+
+
+
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 8.1.1"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Galton Lai的个人博客</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/thisisgz" class="waves-effect waves-light">
+      
+      <i class="fas" style="zoom: 0.6;"></i>
+      
+      <span>这里是广州</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+  <li>
+    <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
+      <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Galton Lai的个人博客</div>
+        <div class="logo-desc">
+            
+            Galton Lai
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/thisisgz" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas"></i>
+			
+			这里是广州
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/pic/cover_PXEBootLinux.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">通过实体机的网络引导网盘内的系统？怎么做到的</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E6%8E%A2%E7%A9%B6%E5%AE%9E%E9%AA%8C/">
+                                <span class="chip bg-color">探究实验</span>
+                            </a>
+                        
+                            <a href="/tags/%E7%B3%BB%E7%BB%9F%E6%95%B4%E6%B4%BB/">
+                                <span class="chip bg-color">系统整活</span>
+                            </a>
+                        
+                            <a href="/tags/%E7%BD%91%E7%9B%98/">
+                                <span class="chip bg-color">网盘</span>
+                            </a>
+                        
+                            <a href="/tags/Linux/">
+                                <span class="chip bg-color">Linux</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2026-06-27
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2026-06-28
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    1.8k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    6 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+	<!-- 代码块功能依赖 -->
+	<script type="text/javascript" src="/libs/codeBlock/codeBlockFunction.js"></script>
+
+	<!-- 代码语言 -->
+	
+	<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+	
+
+	<!-- 代码块复制 -->
+	
+	<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+	
+
+	<!-- 代码块收缩 -->
+	
+	<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+	
+
+        
+        <!-- 代码块折行 -->
+        <style type="text/css">
+            code[class*="language-"], pre[class*="language-"] { white-space: pre-wrap !important; }
+        </style>
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="通过实体机的网络引导网盘内的系统？怎么做到的"><a href="#通过实体机的网络引导网盘内的系统？怎么做到的" class="headerlink" title="通过实体机的网络引导网盘内的系统？怎么做到的"></a>通过实体机的网络引导网盘内的系统？怎么做到的</h1><p><strong>Author:</strong> GaltonLai</p>
+<p><strong>Date:</strong> 2026-06-27</p>
+<p><strong>Link:</strong> <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/2054241718854329478">https://zhuanlan.zhihu.com/p/2054241718854329478</a></p>
+<p>大家好，近期我做了一个实验：就是尝试通过实体机的网络引导（<a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=277811434&content_type=Article&match_order=1&q=PXE&zhida_source=entity">PXE</a>）来加载一个运行在网盘上的Linux系统。</p>
+<p>这个想法源于一位网友的启发——他提到，理论上可以将任何系统镜像上传到网盘，再通过网络引导启动。这听起来像是不是轻易实现的事情，但经过反复调试与踩坑，我最终成功实现了“从OneDrive启动Linux”的目标。整个过程充满挑战，也让我对PXE、initramfs、<a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=277811434&content_type=Article&match_order=1&q=JuiceFS&zhida_source=entity">JuiceFS</a>等底层技术有了更深刻的理解。</p>
+<hr>
+<p>实验的核心目标是：<strong>不依赖本地存储介质（如U盘或硬盘），仅通过网络和云存储服务，让一台裸机直接启动并运行一个完整的Linux系统</strong>。我选择的方案分为两个阶段：</p>
+<p>第一阶段尝试用JuiceFS挂载OneDrive作为根文件系统。</p>
+<p>第二阶段则改用静态initramfs+<a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=277811434&content_type=Article&match_order=1&q=IPXE&zhida_source=entity">IPXE</a>的方式，绕过动态挂载的性能瓶颈，最终取得成功。</p>
+<hr>
+<h3 id="方案一：JuiceFS-rclone-FUSE-——-理想很丰满，现实很骨感"><a href="#方案一：JuiceFS-rclone-FUSE-——-理想很丰满，现实很骨感" class="headerlink" title="方案一：JuiceFS + rclone + FUSE —— 理想很丰满，现实很骨感"></a>方案一：JuiceFS + <a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=277811434&content_type=Article&match_order=1&q=rclone&zhida_source=entity">rclone</a> + FUSE —— 理想很丰满，现实很骨感</h3><p>我的第一套方案是这样的：</p>
+<p>1.在一台Linux主机（A机）上配置rclone，将OneDrive挂载为本地目录；</p>
+<p><img src="https://picx.zhimg.com/v2-4ffa3687f683453fedf75c27719e79dd_1440w.jpg"></p>
+<p><img src="https://pica.zhimg.com/v2-6119d1088009a9d78e7048a61a254592_1440w.jpg"></p>
+<p><img src="https://pica.zhimg.com/v2-ef194bdf74f8430c69f25e5458861b22_1440w.jpg"></p>
+<p><img src="https://pic2.zhimg.com/v2-cd6147f713513e85b47f34a5fdd2b5b5_1440w.jpg"></p>
+<p><img src="https://pic1.zhimg.com/v2-020484b504fafacac76d0f4e56db20bc_1440w.jpg"></p>
+<p>使用JuiceFS将该目录封装成一个FUSE文件系统；</p>
+<p><img src="https://pic1.zhimg.com/v2-b6ec656e77d0dbbdff46761d8894d10c_1440w.jpg"></p>
+<p><img src="https://pica.zhimg.com/v2-dc5176c0875de9512bafe7e0e7b96370_1440w.jpg"></p>
+<p>用<a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=277811434&content_type=Article&match_order=1&q=Alpine+Linux&zhida_source=entity">Alpine Linux</a>最小化镜像作为基础，打包一个包含<code>rclone</code>、<code>juicefs</code>、<code>fuse</code>等工具的initramfs；</p>
+<p><img src="https://pic1.zhimg.com/v2-9d81833397e417c05499d004ab1ae084_1440w.jpg"></p>
+<p>将整个系统通过HTTP服务器提供，并配置PXE引导链：<code>pxelinux → iPXE → HTTP下载initrd → 启动时自动挂载OneDrive为根文件系统</code>。</p>
+<p><strong><em>听起来逻辑清晰，但执行起来问题频出。</em></strong></p>
+<hr>
+<p>首先，我在A机上安装了<code>rclone</code>和<code>juicefs</code>，并通过<code>rclone config</code>完成了OneDrive的OAuth认证。认证过程需要浏览器跳转，我复制了授权链接，在Firefox中登录微软账号完成授权，返回后rclone成功生成了配置文件。</p>
+<p>接着，我尝试用<code>rclone mount onedrive:/ /mnt/onedrive</code>挂载网盘。然而，由于OneDrive的API限制，每次读取小文件都会触发大量HTTP请求。当系统启动时尝试<code>ls /</code>，它会遍历整个根目录结构——而JuiceFS为了支持POSIX语义，会把每个目录项都当作独立对象去请求，导致成千上万次API调用。结果就是：<strong>挂载成功了，但<code>ls</code>命令卡死数分钟，甚至超时失败</strong>。</p>
+<p><img src="https://pica.zhimg.com/v2-467d3012e91a9fe0ce30c880bb942238_1440w.jpg"></p>
+<p>更致命的是，PXE环境下的initramfs内存极其有限（通常只有几十MB），而JuiceFS+Fuse+rclone的组合体积庞大，且依赖glibc等动态库，在精简的Alpine环境中难以静态编译。</p>
+<p><img src="https://picx.zhimg.com/v2-46c08443041ebdba649c60ebae18b745_1440w.jpg"></p>
+<p>我尝试用<code>busybox</code>替代部分工具，但仍无法解决核心问题：<strong>网盘延迟太高，无法支撑系统正常启动所需的文件I&#x2F;O</strong>。</p>
+<p><img src="https://picx.zhimg.com/v2-54f10c3f13e492ed714f36336dc3ae89_1440w.jpg"></p>
+<p>最终，我在日志中看到大量<code>InvalidResource: ObjectHandle is Invalid</code>错误，这是OneDrive API的限流响应。方案一宣告失败。</p>
+<p><img src="https://pic2.zhimg.com/v2-5b58909504d3578910998ff9f526b095_1440w.jpg"></p>
+<p><img src="https://pica.zhimg.com/v2-abff4e775b45222afe97c7f234cd4c62_1440w.jpg"></p>
+<hr>
+<h3 id="方案二：静态initramfs-IPXE-——-绕过动态挂载，直击本质"><a href="#方案二：静态initramfs-IPXE-——-绕过动态挂载，直击本质" class="headerlink" title="方案二：静态initramfs + IPXE —— 绕过动态挂载，直击本质"></a>方案二：静态initramfs + IPXE —— 绕过动态挂载，直击本质</h3><p>既然动态挂载行不通，我决定换一条路：<strong>不挂载网盘，而是把整个系统“预打包”成一个静态initramfs镜像，上传到网盘，由PXE直接下载并解压运行</strong>。</p>
+<p>具体步骤如下：</p>
+<p><strong>1.构建完整根文件系统</strong>  </p>
+<p>我在A机上创建<code>/tmp/initramfs/</code>目录，手动复制<code>/bin</code>、<code>/etc</code>、<code>/lib</code>、<code>/usr</code>等关键目录，并将<code>rclone</code>、<code>busybox</code>、<code>bash</code>等必要二进制文件静态编译或拷贝进去。特别注意：必须确保所有依赖库（如<code>libc.so</code>）都一并放入<code>/lib</code>，否则运行时会报错。</p>
+<p><img src="https://picx.zhimg.com/v2-786c11aa7aa3d0d7ff380f1eecf5124b_1440w.jpg"></p>
+<p><strong>2.编写init脚本</strong>  </p>
+<p>在<code>/tmp/initramfs/init</code>中写入一个简单的shell脚本，功能是：</p>
+<ul>
+<li>挂载<code>/proc</code>、<code>/sys</code>、<code>/dev</code></li>
+<li>挂载临时文件</li>
+<li>为了测试，我还加了一个彩蛋：启动后先玩一个“猜数字”小游戏（代码只有几十行，用于验证系统是否真正进入用户空间）</li>
+</ul>
+<p><img src="https://pic3.zhimg.com/v2-a74248bcd9a8e3ec02abe912b9468b4c_1440w.jpg"></p>
+<p><strong>3.打包镜像</strong>  </p>
+<p>使用<code>find . | cpio -ov --format=newc | gzip &gt; initrd-from-cloud.img</code>生成压缩的initramfs镜像。这个镜像不大，完全可接受。</p>
+<p><img src="https://pica.zhimg.com/v2-063b5eed0d4ae57f9366d0c4b766dd20_1440w.jpg"></p>
+<p><strong>4.上传至网盘</strong>  </p>
+<p>将<code>initrd.img</code>和内核<code>vmlinuz</code>以及各个引导文件上传到OneDrive，再检查OneDrive是否挂载到本地目录。</p>
+<p><img src="https://pica.zhimg.com/v2-995aa8b3254d10027ac58b815b21c702_1440w.jpg"></p>
+<p><img src="https://picx.zhimg.com/v2-51fc2449830d3cf7e5bad9645df3f869_1440w.jpg"></p>
+<p><strong>5.配置PXE服务器，把引导文件放网盘里</strong>  </p>
+<p>A电脑（构建机）安装<a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=277811434&content_type=Article&match_order=1&q=dnsmasq&zhida_source=entity">dnsmasq</a>（提供DHCP+TFTP），并配置ipxe脚本：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!ipxe</span></span><br><span class="line">dhcp</span><br><span class="line">kernel http://192.168.31.142:8000/vmlinuz initrd=initrd.img console=tty0</span><br><span class="line">initrd http://192.168.31.142:8000/initrd.img</span><br><span class="line">boot</span><br></pre></td></tr></table></figure>
+
+<p>注意：这里vmlinuz和initrd.img实际是从A电脑的HTTP服务（Python http.server）提供的，而真正的系统文件（即initramfs内部的内容）是从OneDrive下载的——如何实现？<strong>靠rclone挂载，我在挂载的目录改文件就相当于直接改网盘文件。</strong></p>
+<p><img src="https://pica.zhimg.com/v2-c6735043e78a32b13794face8096e8c0_1440w.jpg"></p>
+<p><strong>6.启动服务，测试效果</strong></p>
+<p>我找来一台老款联想笔记本（B电脑），装的是Windows 7。通过采集卡将其屏幕投影到另一台电脑上，以便录制启动过程。</p>
+<p><img src="https://pic3.zhimg.com/v2-82ac16d9f917ab2170821d6d9bc4dca8_1440w.jpg"></p>
+<p>首先，将B机网线接入路由器，确保与A机在同一局域网。然后修改B机BIOS，启用网络启动（PXE）。重启后，B机进入Intel UNDI PXE界面，自动获取IP（192.168.31.115），并从A机的TFTP服务器下载iPXE脚本。</p>
+<p><img src="https://picx.zhimg.com/v2-f1de4f7eaf040dbdf03d3c7cdca373eb_1440w.jpg"></p>
+<p>B电脑（测试机）成功获取IP地址</p>
+<p><img src="https://pica.zhimg.com/v2-99d7b5a372dbcd854408dc3ed44d56a6_1440w.jpg"></p>
+<p>开始获取网盘文件</p>
+<p>为了验证数据来源，我抓包分析：Wireshark显示，B电脑（测试机）在PXE阶段从A电脑（192.168.31.142）下载了initrd，随后又向OneDrive的IP（52.x.x.x）发起了HTTP GET请求，下载了相关文件**。而该IP经查询正是微软<a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=277811434&content_type=Article&match_order=1&q=Azure%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83&zhida_source=entity">Azure数据中心</a>节点**——铁证如山，系统确实来自网盘！</p>
+<p><img src="https://pic1.zhimg.com/v2-974d241376f4b59569b38b7b9df53e98_1440w.jpg"></p>
+<p><img src="https://pic4.zhimg.com/v2-8ab59e6e08d56997d58701828fcc9b4f_1440w.jpg"></p>
+<p>紧接着, iPXE执行HTTP请求，下载<code>vmlinuz</code>和<code>initrd.img</code>。initramfs启动后，解压到内存。全程耗时约2-3分钟——虽然不算快，但<strong>稳定可行</strong>！</p>
+<p>成功引导系统init脚本，开始_“猜数字”_。</p>
+<p><img src="https://pic3.zhimg.com/v2-4eed706d162d8909f6223d6eaad5d8c0_1440w.jpg"></p>
+<p><img src="https://pica.zhimg.com/v2-2c9909dc4733401647d364ea1ac9f934_1440w.jpg"></p>
+<p>数字猜对了，进入bash</p>
+<p><img src="https://pic2.zhimg.com/v2-85725a72a7f43cb25ab7c875fc5dadc1_1440w.jpg"></p>
+<p>虽然有点问题，但还是成功了。</p>
+<hr>
+<h3 id="总结与思考"><a href="#总结与思考" class="headerlink" title="总结与思考"></a>总结与思考</h3><p>这次实验让我深刻体会到：<strong>网络引导的本质，不是“挂载远程磁盘”，而是“下载并执行远程代码”</strong>. JuiceFS的思路方向没错，但选错了场景——它适合长期运行的服务端，不适合一次性启动的initramfs。</p>
+<p>而静态initramfs+IPXE的组合，巧妙地将“大文件下载”与“系统启动”解耦，既规避了API限流，又充分利用了HTTP协议的高效性。即使网速一般，<strong>只要能完整下载镜像，就能成功启动</strong>。</p>
+<p>当然，这套方案仍有局限：**依赖公网稳定性、启动速度受网速影响、无法热更新。**但对于应急恢复、无盘工作站、或者单纯的技术探索，它提供了一种极富创意的解决方案。</p>
+<p>技术的魅力，正在于把看似不可能的事，变成一行行可执行的代码。这一次，我让Linux从云端“跃”到了物理机上——这可能也是一种成就吧。（无所谓了，就这样写吧）</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Galton Lai</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://galtonlai.github.io/2026/06/27/PXEbootLinux_GaltonLai/">http://galtonlai.github.io/2026/06/27/PXEbootLinux_GaltonLai/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">Galton Lai</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E6%8E%A2%E7%A9%B6%E5%AE%9E%E9%AA%8C/">
+                                    <span class="chip bg-color">探究实验</span>
+                                </a>
+                            
+                                <a href="/tags/%E7%B3%BB%E7%BB%9F%E6%95%B4%E6%B4%BB/">
+                                    <span class="chip bg-color">系统整活</span>
+                                </a>
+                            
+                                <a href="/tags/%E7%BD%91%E7%9B%98/">
+                                    <span class="chip bg-color">网盘</span>
+                                </a>
+                            
+                                <a href="/tags/Linux/">
+                                    <span class="chip bg-color">Linux</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+    <div class="card" data-aos="fade-up">
+    <div id="utteranc-container" class="card-content">
+        <script src="https://utteranc.es/client.js"
+		repo="GaltonLai/galtonlai.github.io"
+        	issue-term="pathname"
+        	theme="github-light"
+        	crossorigin="anonymous"                
+	async>
+        </script>
+    </div>
+</div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2026/06/27/PXEbootLinux_GaltonLai/">
+                    <div class="card-image">
+                        
+                        <img src="/images/pic/cover_PXEBootLinux.png" class="responsive-img" alt="通过实体机的网络引导网盘内的系统？怎么做到的">
+                        
+                        <span class="card-title">通过实体机的网络引导网盘内的系统？怎么做到的</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2026-06-27
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Galton Lai
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%8E%A2%E7%A9%B6%E5%AE%9E%E9%AA%8C/">
+                        <span class="chip bg-color">探究实验</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%B3%BB%E7%BB%9F%E6%95%B4%E6%B4%BB/">
+                        <span class="chip bg-color">系统整活</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%BD%91%E7%9B%98/">
+                        <span class="chip bg-color">网盘</span>
+                    </a>
+                    
+                    <a href="/tags/Linux/">
+                        <span class="chip bg-color">Linux</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2026/05/01/9600to10240_GaltonLai/">
+                    <div class="card-image">
+                        
+                        <img src="/images/pic/cover_9600to10240.png" class="responsive-img" alt="【Windows演变史】从Win8.1演变到Win10，曾经存在Win8.2和Win9？">
+                        
+                        <span class="card-title">【Windows演变史】从Win8.1演变到Win10，曾经存在Win8.2和Win9？</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2026-05-01
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Galton Lai
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%BC%94%E5%8F%98%E5%8F%B2/">
+                        <span class="chip bg-color">演变史</span>
+                    </a>
+                    
+                    <a href="/tags/Windows/">
+                        <span class="chip bg-color">Windows</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">
+                        <span class="chip bg-color">操作系统</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%94%B5%E8%84%91/">
+                        <span class="chip bg-color">电脑</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2026</span>
+            
+            <a href="/about" target="_blank">Galton Lai</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">13.2k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2026";
+                        var startMonth = "4";
+                        var startDate = "28";
+                        var startHour = "0";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'zh-CN';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/GaltonLai" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:galtonlai705@outlook.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2462433690" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2462433690" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+    <a href="https://www.zhihu.com/people/galtonlai" class="tooltipped" target="_blank" data-tooltip="关注我的知乎: https://www.zhihu.com/people/galtonlai" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
+    </a>
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 白天和黑夜主题 -->
+<div class="stars-con">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>  
+</div>
+
+<script>
+    function switchNightMode() {
+        $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
+        setTimeout(function () {
+            $('body').hasClass('DarkMode') 
+            ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')) 
+            : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
+            
+            setTimeout(function () {
+            $('.Cuteen_DarkSky').fadeOut(1e3, function () {
+                $(this).remove()
+            })
+            }, 2e3)
+        })
+    }
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    
+
+    
+    
+    
+
+    <!-- 雪花特效 -->
+    
+
+    <!-- 鼠标星星特效 -->
+     
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/star.js"><\/script>');
+            }
+        </script>
+    
+
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
