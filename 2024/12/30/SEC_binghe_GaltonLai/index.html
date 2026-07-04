@@ -1,0 +1,1103 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="【网络安全笔记】冰河木马的演示与防御，我说过的, Galton Lai">
+    <meta name="description" content="【网络安全笔记】冰河木马的演示与防御，我说过的Author: GaltonLai
+Date: 2026-06-27
+Link: https://zhuanlan.zhihu.com/p/2054265636403127039
+观前告示此文章">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>【网络安全笔记】冰河木马的演示与防御，我说过的 | Galton Lai的个人博客</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    
+
+
+    <!-- bg-cover style     -->
+
+
+
+<link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+<link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+<link rel="stylesheet" type="text/css" href="/css/matery.css">
+<link rel="stylesheet" type="text/css" href="/css/my.css">
+<link rel="stylesheet" type="text/css" href="/css/dark.css" media="none" onload="if(media!='all')media='all'">
+
+
+
+
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/css/post.css">
+
+
+
+
+    
+
+
+
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 8.1.1"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Galton Lai的个人博客</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/thisisgz" class="waves-effect waves-light">
+      
+      <i class="fas" style="zoom: 0.6;"></i>
+      
+      <span>这里是广州</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+  <li>
+    <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
+      <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Galton Lai的个人博客</div>
+        <div class="logo-desc">
+            
+            Galton Lai
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/thisisgz" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas"></i>
+			
+			这里是广州
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/pic/cover_SEC_binghe.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">【网络安全笔记】冰河木马的演示与防御，我说过的</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">
+                                <span class="chip bg-color">网络安全</span>
+                            </a>
+                        
+                            <a href="/tags/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8/">
+                                <span class="chip bg-color">信息安全</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%9C%A8%E9%A9%AC/">
+                                <span class="chip bg-color">木马</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2024-12-30
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2026-06-27
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    1.2k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    4 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+	<!-- 代码块功能依赖 -->
+	<script type="text/javascript" src="/libs/codeBlock/codeBlockFunction.js"></script>
+
+	<!-- 代码语言 -->
+	
+	<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+	
+
+	<!-- 代码块复制 -->
+	
+	<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+	
+
+	<!-- 代码块收缩 -->
+	
+	<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+	
+
+        
+        <!-- 代码块折行 -->
+        <style type="text/css">
+            code[class*="language-"], pre[class*="language-"] { white-space: pre-wrap !important; }
+        </style>
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="【网络安全笔记】冰河木马的演示与防御，我说过的"><a href="#【网络安全笔记】冰河木马的演示与防御，我说过的" class="headerlink" title="【网络安全笔记】冰河木马的演示与防御，我说过的"></a>【网络安全笔记】冰河木马的演示与防御，我说过的</h1><p><strong>Author:</strong> GaltonLai</p>
+<p><strong>Date:</strong> 2026-06-27</p>
+<p><strong>Link:</strong> <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/2054265636403127039">https://zhuanlan.zhihu.com/p/2054265636403127039</a></p>
+<h3 id="观前告示"><a href="#观前告示" class="headerlink" title="观前告示"></a>观前告示</h3><p>此文章旨在分享网络安全知识学习经验，无不良引导。</p>
+<p><strong>本文章演示的恶意程序、木马病毒和各种网络攻击方式仅用于学习目的，样本不提供下载，请勿用于非法用途。</strong></p>
+<p><strong>请遵守我国相关法律法规。</strong></p>
+<hr>
+<p>大家好，今天我讲一下<a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=277816901&content_type=Article&match_order=1&q=%E5%86%B0%E6%B2%B3%E6%9C%A8%E9%A9%AC&zhida_source=entity">冰河木马</a>。</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">这里先介绍环境</span><br><span class="line">攻击机 Windows 7 （IP：192.168.3.135）</span><br><span class="line">目标机 Windows Server 2008 （IP：192.168.3.139）</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="首先，什么是冰河木马？"><a href="#首先，什么是冰河木马？" class="headerlink" title="首先，什么是冰河木马？"></a>首先，什么是冰河木马？</h3><p>冰河木马原本是一种<a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=277816901&content_type=Article&match_order=1&q=%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6%E8%BD%AF%E4%BB%B6&zhida_source=entity">远程控制软件</a>，最初由开发者于1999年编写。</p>
+<p>目的是创建一个功能强大的远程控制工具。然而，由于其强大的功能，它很快被黑客用作入侵工具，成为了国产木马的代表之一。</p>
+<p>它的核心危害在于：一旦运行，攻击者就能远程操控你的电脑——比如<strong>查看文件、下载数据、执行命令，甚至远程关机</strong>。而最可怕的是，它常<strong>伪装成普通文件（比如一张图片）</strong>，诱使用户点击运行。</p>
+<p><img src="https://pic2.zhimg.com/v2-80c7d89cf31dda5e38d4cc721a158471_1440w.jpg"></p>
+<hr>
+<h3 id="一个普通文件，是如何捆绑上冰河木马的？"><a href="#一个普通文件，是如何捆绑上冰河木马的？" class="headerlink" title="一个普通文件，是如何捆绑上冰河木马的？"></a>一个普通文件，是如何捆绑上冰河木马的？</h3><ul>
+<li>**准备一张图片做成图标。**我用画图工具创建了一张黄色背景的图片，然后将其保存为PNG格式。接着，我使用在线工具将这张图片转换为ICO图标文件——这一步至关重要，因为冰河木马的自解压机制依赖图标文件触发执行流程。</li>
+</ul>
+<p><img src="https://pica.zhimg.com/v2-3d1e82cf9b7b5cb1c779389147afdac2_1440w.jpg"></p>
+<p>准备一张图片</p>
+<p><img src="https://pic2.zhimg.com/v2-6666b100e02345dd9308934c684b1f2b_1440w.jpg"></p>
+<p>使用工具，转换成ico图标文件</p>
+<p><img src="https://pic2.zhimg.com/v2-24dd60f7ab5ef5f86d7af4b192992d19_1440w.jpg"></p>
+<p>图标文件</p>
+<ul>
+<li>**捆绑木马程序。**真正的技术核心在“捆绑”阶段。我解压出冰河木马的服务端程序（<a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=277816901&content_type=Article&match_order=1&q=G_SERVER.EXE&zhida_source=entity">G_SERVER.EXE</a>）和客户端配置文件（<a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=277816901&content_type=Article&match_order=1&q=Operate.ini&zhida_source=entity">Operate.ini</a>），然后使用WinRAR将它们与刚才生成的ICO图标打包成一个自解压EXE文件。重点来了：在高级设置中，我将“自解压路径”设为<code>%systemroot%\temp</code>，并在“解压后运行”中指定执行<code>G_SERVER.EXE</code>，同时将“解压后运行”的参数设为图片文件名（如<code>pic1.png</code>）。这意味着：当用户双击这个“图片”时，系统会先解压出木马服务端，再自动运行它，而用户看到的只是那张熟悉的黄色图片——完全无感。</li>
+</ul>
+<p><img src="https://pic4.zhimg.com/v2-12e06cbbfdd9ddbf0748908a4af8fd3f_1440w.jpg"></p>
+<p><img src="https://pic2.zhimg.com/v2-75670fa2092fc696d2fc1a16a933cd51_1440w.jpg"></p>
+<p><img src="https://pica.zhimg.com/v2-56c7688287f0761c277def031530c5a4_1440w.jpg"></p>
+<p><img src="https://pic4.zhimg.com/v2-5b595e94c8175b513b524cfc20fb1135_1440w.jpg"></p>
+<p><img src="https://pic1.zhimg.com/v2-610c2570e7c7c467f4e020718358048a_1440w.jpg"></p>
+<p><img src="https://pic2.zhimg.com/v2-3caa031e02c0c70af90e83c5380124a5_1440w.jpg"></p>
+<p><img src="https://pica.zhimg.com/v2-c3ab3082ac20503b51f18a5783b6fafc_1440w.jpg"></p>
+<p><img src="https://pic3.zhimg.com/v2-836262f196aa974da2e9c23adc659aa4_1440w.jpg"></p>
+<p><img src="https://pic1.zhimg.com/v2-acd4ce6155bf69f4171f5b440085ebde_1440w.jpg"></p>
+<hr>
+<h3 id="开始控制"><a href="#开始控制" class="headerlink" title="开始控制"></a>开始控制</h3><p><img src="https://pic1.zhimg.com/v2-e3f39b631b8fe0cbe87b04fb9d2800ca_1440w.jpg"></p>
+<p>当这个伪装成图片的EXE被复制到被控机并运行后，奇迹发生了：被控机瞬间变卡，而攻击端的控制软件立即识别到目标IP（192.168.3.139），并列出其全部文件目录。</p>
+<p><img src="https://pica.zhimg.com/v2-6fa94445e5f0e7b2e4eeed635c784346_1440w.jpg"></p>
+<p>我尝试了远程下载文件、查看系统信息、发送弹窗消息，甚至“隐藏桌面”——所有操作都成功了。最震撼的是，我点击“远程关机”，被控机直接进入注销界面，屏幕上显示“按 CTRL + ALT + DELETE 登录”，仿佛被无形之手操控。</p>
+<p><img src="https://picx.zhimg.com/v2-8bdfef489d93aa51df65a3f3c521eaf7_1440w.jpg"></p>
+<p><img src="https://pic2.zhimg.com/v2-a7327a3a14889dc35ea6301f5f043f93_1440w.jpg"></p>
+<p><img src="https://pic4.zhimg.com/v2-dc4114348184e6feca42d3fcaaf546b1_1440w.jpg"></p>
+<p>尝试发送窗口</p>
+<p><img src="https://pic1.zhimg.com/v2-643987e648bd63b3a3efbdc080aab3b4_1440w.jpg"></p>
+<p>成功显示</p>
+<p><img src="https://pic1.zhimg.com/v2-ac0e4da6b93a5fbddeeabb9d0f648768_1440w.jpg"></p>
+<p>尝试远程关机</p>
+<p><img src="https://pic2.zhimg.com/v2-ad85f7576180f0eebbb9b225f2a53779_1440w.jpg"></p>
+<p>注销了，但没关机</p>
+<p><strong><em>但不管怎么说，反正就是能起到控制作用的啦。总而言之，我觉得，这个木马程序还是有一定危害性的。</em></strong></p>
+<hr>
+<p>那么，如何防御？我总结了四步实战策略：</p>
+<p><strong>1.查端口</strong>：冰河默认监听7626端口，可用<code>netstat -ano | findstr 7626</code>检测；</p>
+<p><img src="https://pic2.zhimg.com/v2-71bd143b894b06580de1e9b2e19f739f_1440w.jpg"></p>
+<p><strong>2.查进程</strong>：它常伪装成<code>[Kernel32.exe](https://zhida.zhihu.com/search?content_id=277816901&amp;content_type=Article&amp;match_order=1&amp;q=Kernel32.exe&amp;zhida_source=entity)</code>，用<code>tasklist | findstr Kernel32.exe</code>排查，发现即用<code>taskkill /f /im Kernel32.exe</code>终止；</p>
+<p><img src="https://pic4.zhimg.com/v2-67751f361652b71e8dfa51d2120e6025_1440w.jpg"></p>
+<p><strong>3.删文件</strong>：清除<code>C:\Windows\system32\Kernel32.exe</code>及同目录下的<code>systexplr.exe</code>；</p>
+<p><img src="https://pic1.zhimg.com/v2-dc63efe7c96339be78909a1bcd56ac7a_1440w.jpg"></p>
+<p><strong>4.修注册表</strong>：删除<code>HKLM\Software\Microsoft\Windows\CurrentVersion\Run</code>中的木马启动项，并恢复被篡改的文件关联（如<code>.txt</code>默认用记事本打开）；</p>
+<p><img src="https://pic1.zhimg.com/v2-688bf7f8007cfe3e8bad2d8d2164bcd8_1440w.jpg"></p>
+<p><img src="https://pic3.zhimg.com/v2-f74b7671ea0c01adea4ca88ff70579a4_1440w.jpg"></p>
+<p><img src="https://pic1.zhimg.com/v2-5ada4e9d1179e97b048fdfad62e08658_1440w.jpg"></p>
+<p><strong>5.开防火墙+装杀软</strong>：最后也是最重要的防线——开启Windows防火墙，并安装专业杀毒软件（实测某国产杀软在木马运行瞬间即告警拦截）。</p>
+<p><img src="https://pic4.zhimg.com/v2-aa11dd95ffae753c28ad08ed9576df29_1440w.jpg"></p>
+<p>打开防火墙</p>
+<p><img src="https://picx.zhimg.com/v2-e9f1ce4da93bc1f2bbc7132bfa74f1b7_1440w.jpg"></p>
+<p>安装杀毒软件</p>
+<hr>
+<p>整个实验让我意识到：<strong>木马的危险不在于技术多高深，而在于它利用了人性的疏忽</strong>——我们总以为“点开图片没事”，却忘了操作系统对自解压文件的信任机制。**真正的安全，始于警惕，成于习惯。**希望这篇文章能帮你建立起一道心理防线：面对陌生文件，多问一句“它真的只是图片吗？”。</p>
+<p>最后提醒一句：本文仅用于学习研究，请严格遵守《中华人民共和国治安管理处罚法》第二十九条，切勿用于非法用途。技术无善恶，人心有高低。</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Galton Lai</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://galtonlai.github.io/2024/12/30/SEC_binghe_GaltonLai/">http://galtonlai.github.io/2024/12/30/SEC_binghe_GaltonLai/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">Galton Lai</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">
+                                    <span class="chip bg-color">网络安全</span>
+                                </a>
+                            
+                                <a href="/tags/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8/">
+                                    <span class="chip bg-color">信息安全</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%9C%A8%E9%A9%AC/">
+                                    <span class="chip bg-color">木马</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+    <div class="card" data-aos="fade-up">
+    <div id="utteranc-container" class="card-content">
+        <script src="https://utteranc.es/client.js"
+		repo="GaltonLai/galtonlai.github.io"
+        	issue-term="pathname"
+        	theme="github-light"
+        	crossorigin="anonymous"                
+	async>
+        </script>
+    </div>
+</div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2025/01/04/SEC_arp_GaltonLai/">
+                    <div class="card-image">
+                        
+                        <img src="/images/pic/cover_SEC_arp.png" class="responsive-img" alt="【网络安全笔记】ARP欺骗攻击的演示与防御，我说过的">
+                        
+                        <span class="card-title">【网络安全笔记】ARP欺骗攻击的演示与防御，我说过的</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2025-01-04
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Galton Lai
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">
+                        <span class="chip bg-color">网络安全</span>
+                    </a>
+                    
+                    <a href="/tags/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8/">
+                        <span class="chip bg-color">信息安全</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%BD%91%E7%BB%9C%E6%94%BB%E5%87%BB/">
+                        <span class="chip bg-color">网络攻击</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/07/13/Install100MacOS_GaltonLai/">
+                    <div class="card-image">
+                        
+                        <img src="/images/pic/cover_Install100MacOS.png" class="responsive-img" alt="一台电脑，我又装了100个MacOS系统！">
+                        
+                        <span class="card-title">一台电脑，我又装了100个MacOS系统！</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-13
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Galton Lai
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%AE%9E%E9%AA%8C%E6%8E%A2%E7%A9%B6/">
+                        <span class="chip bg-color">实验探究</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%A4%9A%E7%B3%BB%E7%BB%9F/">
+                        <span class="chip bg-color">多系统</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2026</span>
+            
+            <a href="/about" target="_blank">Galton Lai</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">21.1k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/GaltonLai" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:galtonlai705@outlook.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2462433690" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2462433690" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+    <a href="https://www.zhihu.com/people/galtonlai" class="tooltipped" target="_blank" data-tooltip="关注我的知乎: https://www.zhihu.com/people/galtonlai" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
+    </a>
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 白天和黑夜主题 -->
+<div class="stars-con">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>  
+</div>
+
+<script>
+    function switchNightMode() {
+        $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
+        setTimeout(function () {
+            $('body').hasClass('DarkMode') 
+            ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')) 
+            : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
+            
+            setTimeout(function () {
+            $('.Cuteen_DarkSky').fadeOut(1e3, function () {
+                $(this).remove()
+            })
+            }, 2e3)
+        })
+    }
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    
+
+    
+    
+    
+
+    <!-- 雪花特效 -->
+    
+
+    <!-- 鼠标星星特效 -->
+     
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/star.js"><\/script>');
+            }
+        </script>
+    
+
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
