@@ -391,12 +391,32 @@ Date: 2026-05-0">
                 
 
                 
-
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2025-05-01
+                </div>
                 
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    1.7k
+                </div>
+                
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    5 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
             </div>
         </div>
         <hr class="clearfix">
@@ -436,7 +456,7 @@ Date: 2026-05-0">
 <p><strong>Link:</strong> <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/2033688602731877885">https://zhuanlan.zhihu.com/p/2033688602731877885</a></p>
 <p>【回忆2020年的自己】那100个操作系统，我是如何安装到1台电脑上的？</p>
 <p>（这是我在B站上的的第50期视频，2025年1月13号，我也做过这期视频的番外篇，解析了一下原理和实现方法，这里我将会以文字的方式表述出来）</p>
-<p><a href="https://link.zhihu.com/?target=https://www.bilibili.com/video/BV18t4y1v7gB/">【全网首发】1个电脑，100个系统！！！[R.CPDS|v50]www.bilibili.com/video/BV18t4y1v7gB/</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV18t4y1v7gB/">当时我的B站视频</a></p>
 <h3 id="先提一下背景"><a href="#先提一下背景" class="headerlink" title="先提一下背景"></a>先提一下背景</h3><p>各位朋友大家好啊，我是GaltonLai（就是在B站上更新电脑系统相关视频的GaltonLai，当时叫RyanCPDS）。</p>
 <p>我曾经有在我的B站频道上，做了一部<strong>1台电脑安装100个操作系统</strong>的这个视频嘛。 那期视频已经是2020年10月份的了，所以也整整四五年的啦。 但是为什么我还要为这个视频做个番外篇？其实这个视频对我而言，还是比较<strong>意义重大</strong>的。 毕竟这个视频也许是我这个频道里面，<strong>工程量最大</strong>的一个视频。 而且我刚放寒假回来，刚好有时间。给大家分享一下我做这个视频的心得。 所以，开始吧。</p>
 <p>首先我给大家看看，这电脑是1TB的。然后我的移动硬盘是3TB的。当时我做这个实验我还记得当时安装100个操作系统我就安装到这个硬盘上的。</p>
@@ -874,12 +894,16 @@ Date: 2026-05-0">
 <style>
     .aplayer .aplayer-lrc p {
         
+        display: none;
+        
         font-size: 12px;
         font-weight: 700;
         line-height: 16px !important;
     }
 
     .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
         
         font-size: 15px;
         color: #42b983;
@@ -922,17 +946,20 @@ Date: 2026-05-0">
     
 
     <div class="container row center-align"
-         style="margin-bottom: 0px !important;">
+         style="margin-bottom: 15px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2019-2026</span>
+                <span id="year">2026</span>
             
             <a href="/about" target="_blank">Galton Lai</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             
             <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">3.6k</span>
             
             
             
@@ -953,6 +980,60 @@ Date: 2026-05-0">
             <br>
 
             <!-- 运行天数提醒. -->
+            
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2026";
+                        var startMonth = "4";
+                        var startDate = "28";
+                        var startHour = "0";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'zh-CN';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
             
             <br>
             
@@ -1148,6 +1229,14 @@ $(function () {
     
 
     <!-- 鼠标星星特效 -->
+     
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/star.js"><\/script>');
+            }
+        </script>
     
 
      
@@ -1174,8 +1263,6 @@ $(function () {
     })();
 </script>
 
-    
-    <script src="/libs/others/clicklove.js" async="async"></script>
     
     
     <script async src="/libs/others/busuanzi.pure.mini.js"></script>
