@@ -1,0 +1,1163 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="【Windows演变史】Win7到Win8的演变史，系统界面和交互逻辑是怎么变化的？, Galton Lai">
+    <meta name="description" content="【Windows演变史】Win7到Win8的演变史，系统界面和交互逻辑是怎么变化的？Author: GaltonLai
+Date: 2026-07-05
+Link: https://zhuanlan.zhihu.com/p/20571591">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>【Windows演变史】Win7到Win8的演变史，系统界面和交互逻辑是怎么变化的？ | Galton Lai的个人博客</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    
+
+
+    <!-- bg-cover style     -->
+
+
+
+<link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+<link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+<link rel="stylesheet" type="text/css" href="/css/matery.css">
+<link rel="stylesheet" type="text/css" href="/css/my.css">
+<link rel="stylesheet" type="text/css" href="/css/dark.css" media="none" onload="if(media!='all')media='all'">
+
+
+
+
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/css/post.css">
+
+
+
+
+    
+
+
+
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 8.1.1"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Galton Lai的个人博客</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/thisisgz" class="waves-effect waves-light">
+      
+      <i class="fas" style="zoom: 0.6;"></i>
+      
+      <span>这里是广州</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+  <li>
+    <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
+      <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Galton Lai的个人博客</div>
+        <div class="logo-desc">
+            
+            Galton Lai
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/thisisgz" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas"></i>
+			
+			这里是广州
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/pic/cover_7600to9200.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">【Windows演变史】Win7到Win8的演变史，系统界面和交互逻辑是怎么变化的？</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E6%BC%94%E5%8F%98%E5%8F%B2/">
+                                <span class="chip bg-color">演变史</span>
+                            </a>
+                        
+                            <a href="/tags/Windows/">
+                                <span class="chip bg-color">Windows</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">
+                                <span class="chip bg-color">操作系统</span>
+                            </a>
+                        
+                            <a href="/tags/%E7%94%B5%E8%84%91/">
+                                <span class="chip bg-color">电脑</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E7%94%B5%E8%84%91%E7%B3%BB%E7%BB%9F%E7%A7%91%E6%99%AE/" class="post-category">
+                                电脑系统科普
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2026-04-18
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2026-07-05
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    1.8k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    6 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+	<!-- 代码块功能依赖 -->
+	<script type="text/javascript" src="/libs/codeBlock/codeBlockFunction.js"></script>
+
+	<!-- 代码语言 -->
+	
+	<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+	
+
+	<!-- 代码块复制 -->
+	
+	<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+	
+
+	<!-- 代码块收缩 -->
+	
+	<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+	
+
+        
+        <!-- 代码块折行 -->
+        <style type="text/css">
+            code[class*="language-"], pre[class*="language-"] { white-space: pre-wrap !important; }
+        </style>
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="【Windows演变史】Win7到Win8的演变史，系统界面和交互逻辑是怎么变化的？"><a href="#【Windows演变史】Win7到Win8的演变史，系统界面和交互逻辑是怎么变化的？" class="headerlink" title="【Windows演变史】Win7到Win8的演变史，系统界面和交互逻辑是怎么变化的？"></a>【Windows演变史】Win7到Win8的演变史，系统界面和交互逻辑是怎么变化的？</h1><p><strong>Author:</strong> GaltonLai</p>
+<p><strong>Date:</strong> 2026-07-05</p>
+<p><strong>Link:</strong> <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/2057159172790265787">https://zhuanlan.zhihu.com/p/2057159172790265787</a></p>
+<p>大家好，今天我们来讲一下**<a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=278362565&content_type=Article&match_order=1&q=Windows+7&zhida_source=entity">Windows 7</a> 到 <a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=278362565&content_type=Article&match_order=1&q=Windows+8&zhida_source=entity">Windows 8</a> 的演变史**。</p>
+<p><strong>有没有这么一种可能</strong>，Windows 8 的诞生并非一次偶然的版本跳跃，而是一场酝酿了近三年的系统重构。从 2009 年 Windows 7 正式发布，到 2012 年 Windows 8 <a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=278362565&content_type=Article&match_order=1&q=RTM&zhida_source=entity">RTM</a> 面世，微软经历了一段从传统桌面思维向触屏交互逻辑艰难转型的过程。这段转型，不只是界面上的的一种修修补补，它涉及**<a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=278362565&content_type=Article&match_order=1&q=%E5%86%85%E6%A0%B8%E7%89%88%E6%9C%AC&zhida_source=entity">内核版本</a>的升级**（从 NT 6.1 过渡到 NT 6.2）和**<a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=278362565&content_type=Article&match_order=1&q=%E6%98%BE%E7%A4%BA%E5%BC%95%E6%93%8E&zhida_source=entity">显示引擎</a>的替换**（从 Aero 毛玻璃到 <a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=278362565&content_type=Article&match_order=1&q=Metro+%E6%89%81%E5%B9%B3%E5%8C%96&zhida_source=entity">Metro 扁平化</a>），以及**整个<a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=278362565&content_type=Article&match_order=1&q=%E4%BA%A4%E4%BA%92%E6%A8%A1%E5%BC%8F&zhida_source=entity">交互模式</a>**的重新定义。</p>
+<p>如果我们回溯这期间的数十个内部测试版本，可以清晰地看到微软工程师是如何在用户习惯与技术创新之间反复权衡，一步步将那个带有毛玻璃特效的 Windows 7，变成了以<a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=278362565&content_type=Article&match_order=1&q=%E5%8A%A8%E6%80%81%E7%A3%81%E8%B4%B4&zhida_source=entity">动态磁贴</a>为标志的 Windows 8。</p>
+<p>好，先给大家看一看Windows 7 RTM版本（Build 7600）。</p>
+<p><img src="https://pic2.zhimg.com/v2-39002833e86a15ddd91c2af59c04bd1b_1440w.jpg"></p>
+<p>Build 7600</p>
+<p>还有Windows 7 的SP1版本（Build 7601）。</p>
+<p><img src="https://pic4.zhimg.com/v2-ee12939b7dbc4dfc282f39f9b631ccdd_1440w.jpg"></p>
+<p>Build 7601</p>
+<p>到了 Build 7762 时，系统许可协议中的产品名称已经开始写成了“Windows 8”，这是名称上最早出现 Win8 标识的版本之一。</p>
+<p><img src="https://pica.zhimg.com/v2-09fb3ee96d24eccb69779f5c4c9443b6_1440w.jpg"></p>
+<p>Build 7762</p>
+<p>到了 Build 7779 时，微软引入了 <a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=278362565&content_type=Article&match_order=1&q=Redpill+%E8%A7%A3%E9%94%81%E6%9C%BA%E5%88%B6&zhida_source=entity">Redpill 解锁机制</a>——这是一种用来隐藏尚未完工的 <a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=278362565&content_type=Article&match_order=1&q=Metro+%E7%95%8C%E9%9D%A2&zhida_source=entity">Metro 界面</a>的开关，为后续 Win8 的开发和测试做好了准备。</p>
+<p><img src="https://picx.zhimg.com/v2-3eedf33a6038b4dc8c03a36cfde11f75_1440w.jpg"></p>
+<p>Build 7779</p>
+<p>到了 Build 7788 时，系统首次引入了能够正常使用的全屏开始屏幕（即 Metro 屏幕），尽管当时功能还比较简单，但这标志着 Win8 最具标志性的界面元素正式登场。</p>
+<p><img src="https://pic4.zhimg.com/v2-a5ee60a4ec629dd53a072ca0ae11cd49_1440w.jpg"></p>
+<p>Build 7788</p>
+<p>到了 Build 7808 时，右侧的 <a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=278362565&content_type=Article&match_order=1&q=Charm+%E6%A0%8F&zhida_source=entity">Charm 栏</a>被引入，用户可以通过 Win+C 组合键将其调出——<strong>虽然那时候它还只能显示、无法实际操作。</strong></p>
+<p><img src="https://pic1.zhimg.com/v2-e69e07b34982d9ea58559dcc365de4c8_1440w.jpg"></p>
+<p>Build 7808</p>
+<p>随着开发进度的推进，系统在细节层面也在持续调整：</p>
+<p>到了 Build 7887 时，蓝屏界面从传统的深蓝色背景被替换成了更为简洁的黑色背景，这一改动后来被部分延续到了后续版本中。</p>
+<p><img src="https://pica.zhimg.com/v2-2efa12b9cb2db030e04c1e2e2547d7fa_1440w.jpg"></p>
+<p>Build 7887</p>
+<p><img src="https://pic2.zhimg.com/v2-96612d9af7c6ace397ad0450f3b80c8f_1440w.jpg"></p>
+<p>蓝屏界面</p>
+<p>到了 Build 7889 时，系统引入了大量 Metro 风格的应用程序，包括 Metro 版 IE、Metro 版控制面板、Metro 版相机程序和阅读程序等，微软正在快速扩充新界面下的应用生态。</p>
+<p><img src="https://pic4.zhimg.com/v2-362f727a5b074b68a05a9ffcdd6f60c9_1440w.jpg"></p>
+<p>Build 7889</p>
+<p>到了 Build 7920 时，Windows 的<a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=278362565&content_type=Article&match_order=1&q=%E6%BF%80%E6%B4%BB%E6%9C%BA%E5%88%B6&zhida_source=entity">激活机制</a>发生了重要调整——取消了 30 天激活宽限期的显示方式，转而采用了“不激活则限制功能”的策略。</p>
+<p><img src="https://picx.zhimg.com/v2-689a8fb17237fcb561ee5188a72ebd63_1440w.jpg"></p>
+<p>Build 7920</p>
+<p>到了 Build 7957 时，<a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=278362565&content_type=Article&match_order=1&q=Ribbon&zhida_source=entity">Ribbon</a> 样式的资源管理器经历了一次大改，功能菜单、图标样式和布局都进行了全面调整，而且启动 Ribbon 资源管理器不再需要 Redpill 解锁，只需修改<a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=278362565&content_type=Article&match_order=1&q=%E6%B3%A8%E5%86%8C%E8%A1%A8&zhida_source=entity">注册表</a>即可。</p>
+<p><img src="https://pic1.zhimg.com/v2-0073f016421efa3ae750321995703b34_1440w.jpg"></p>
+<p>Build 7957</p>
+<p><img src="https://picx.zhimg.com/v2-79e7a60a35f3956ad349d9d6227e660f_1440w.jpg"></p>
+<p>此时的Metro也有Win8那种样子了</p>
+<p>到了 Build 7973 时，系统的启动画面从 Windows 7 标识更换为一条 <a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=278362565&content_type=Article&match_order=1&q=Betta+%E9%B1%BC&zhida_source=entity">Betta 鱼</a>，引导界面的文字也从“Windows 7”变成了“Windows 8”，开机体验有点接近 Win8 风格。</p>
+<p><img src="https://pic3.zhimg.com/v2-2deff32c6a70b42830817ee20d3f2042_1440w.jpg"></p>
+<p>Build 7973</p>
+<p>到了 Build 8008 时，桌面左下角引入了 Charm 菜单（触摸屏设备则仍显示右侧 Charm 栏），同时系统镜像被标记为“Windows Developer Preview”，标志着<a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=278362565&content_type=Article&match_order=1&q=%E5%BC%80%E5%8F%91%E9%98%B6%E6%AE%B5&zhida_source=entity">开发阶段</a>进入新的节点。</p>
+<p><img src="https://pic2.zhimg.com/v2-7955a194c589bd5d7bad1059c321240f_1440w.jpg"></p>
+<p>Build 8008</p>
+<p>到了 Build 8032 时，系统音效开始逐步更新，虽然很多声音素材当时仍然沿用了 Windows 7 的旧版本。</p>
+<p><img src="https://pic1.zhimg.com/v2-4345ba44d8856e46fd6e9c1d63d1c458_1440w.jpg"></p>
+<p>Build 8032</p>
+<p>到了 Build 8128 时，Redpill 解锁机制被彻底移除，Metro 功能可以直接使用，不再需要手动激活——这说明 Metro 界面已经成熟到可以作为默认体验的组成部分了。</p>
+<p><img src="https://pic4.zhimg.com/v2-8c281a921364640a51d04353a9e908bb_1440w.jpg"></p>
+<p>Build 8128</p>
+<p>到了 Build 8129 时，系统更新了全新的“微软雅黑”字体（英文则为“Segoe UI”），显示效果有所提升，同时 <a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=278362565&content_type=Article&match_order=1&q=Windows+%E4%BD%93%E9%AA%8C%E6%8C%87%E6%95%B0&zhida_source=entity">Windows 体验指数</a>的评分上限从 7.9 调整到了 9.9。</p>
+<p><img src="https://pic1.zhimg.com/v2-59092b6197955fa7cab666ef058fc6f6_1440w.jpg"></p>
+<p>Build 8129</p>
+<p>到了 Build 8161 时，蓝屏界面再次更新，文字内容被改写为_“你的电脑遇到问题，需要重新启动。我们将为你收集错误信息，然后为你重新启动。”_——这个蓝屏样式后来被沿用到了 Windows 10 中。 （文字沿用至了<a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=278362565&content_type=Article&match_order=1&q=Win11&zhida_source=entity">Win11</a>，Win11 24H2之后的蓝屏被改成了黑色背景）</p>
+<p><img src="https://pic3.zhimg.com/v2-434457d65181b92b9dd386a5ae052202_1440w.jpg"></p>
+<p>Build 8161时候的蓝屏</p>
+<p><strong>到了 Build 8186 时，开始按钮没有了，就很…你们懂吧（捂脸笑）</strong></p>
+<p>（此时开发阶段进入Windows Consumer Preview消费者预览版阶段）</p>
+<p><img src="https://pica.zhimg.com/v2-553fd4d616c451dc7d37d6cead7d2274_1440w.jpg"></p>
+<p>Build 8186</p>
+<p>到了 Build 8250 时，Windows 8 的正式 LOGO 被引入，引导界面出现了一个由扁平化 Betta 鱼和气泡组成的“8”字图案，同时系统添加了 Win+X 快捷菜单。</p>
+<p><img src="https://picx.zhimg.com/v2-9a78ef7728e851106aaa6f861ec352eb_1440w.jpg"></p>
+<p>Build 8250</p>
+<p>到了 Build 8318 时，系统经历了一次大规模调整，Aero 的拟物化元素基本被移除，主题全面转向扁平化风格，系统名称最终确定为 Windows 8（ARM 版为 Windows RT，服务器版为 <a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=278362565&content_type=Article&match_order=1&q=Windows+Server+2012&zhida_source=entity">Windows Server 2012</a>），Win8 的整体面貌逐渐成型。</p>
+<p><img src="https://picx.zhimg.com/v2-5d70cc02e01a1c0163d2926b8ef2b955_1440w.jpg"></p>
+<p><img src="https://pic4.zhimg.com/v2-eda57283f6b173e185e389c459d22443_1440w.jpg"></p>
+<p>到了 Build 8400 时，进入了Windows Release Preview发布预览版的开发阶段，桌面小组件中移除了旧版 Windows 徽标，标志着 Windows 7 时代的一个<a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=278362565&content_type=Article&match_order=1&q=%E8%A7%86%E8%A7%89%E7%AC%A6%E5%8F%B7&zhida_source=entity">视觉符号</a>正式走入历史。</p>
+<p><img src="https://pica.zhimg.com/v2-05c5a77097b760bf28bf2bdbba1c563e_1440w.jpg"></p>
+<p>Build 8400</p>
+<p>到了 Build 8432 时，系统彻底移除了 Aero 毛玻璃效果，所有主题全部采用<a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=278362565&content_type=Article&match_order=1&q=%E6%89%81%E5%B9%B3%E5%8C%96%E8%AE%BE%E8%AE%A1&zhida_source=entity">扁平化设计</a>，默认壁纸也暂时还原成了类似 Windows 7 的那张_（好像是Win7登录界面的那张壁纸）_。</p>
+<p><img src="https://pica.zhimg.com/v2-266482434ac10e72015ba31bc6c13378_1440w.jpg"></p>
+<p>Build 8432</p>
+<p>到了 Build 8513 时，引导界面的 LOGO 被更新为天蓝色 Windows 徽标——这个设计一直沿用到 Windows 10，到了Win11，这个引导界面的LOGO才彻底改掉。</p>
+<p><img src="https://pica.zhimg.com/v2-440cb4d0c8ce6dc5be332372cd74473a_1440w.jpg"></p>
+<p>Build 8513</p>
+<p>到了 Build 8888 时，Windows 8 的整体体验已经和最终的 RTM 版本相差无几，锁屏壁纸、开机动画、系统界面都已基本定型。</p>
+<p><img src="https://picx.zhimg.com/v2-e98d5a774126d025b14b6db31da67049_1440w.jpg"></p>
+<p>Build 8888</p>
+<p>最终，在 Build 9200 中，Windows 8 被正式确认为 RTM 版本，时间炸弹被移除，系统宣告完工。</p>
+<p><img src="https://pic2.zhimg.com/v2-0b509d7ce91d5089f8d3006bf0feca55_1440w.jpg"></p>
+<p>Build 9200</p>
+<p><img src="https://pic4.zhimg.com/v2-03a89e8846c4969fb0ceb8caa3578177_1440w.jpg"></p>
+<p>回顾这段从 Windows 7 到 Windows 8 的演化历程，可以看到<a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=278362565&content_type=Article&match_order=1&q=%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F&zhida_source=entity">操作系统</a>设计从来都不是一条直线。微软在这三年间尝试了许多方向——<strong>有的被保留下来成为 Win8 的标志，有的在后续版本中被放弃或调整。<strong>每一个 Build 编号背后，都是微软对于“如何进行桌面交互”的一种纠结。（Win8出版之后几年，能够看得出来，Win8把平板逻辑“硬搬“到桌面端上的交互逻辑</strong>不算成功</strong>）</p>
+<p>Windows 8 或许不是微软最受欢迎的操作系统（<strong>但我觉得是对老电脑优化最好的操作系统</strong>），但它所承载的全新设计探索和技术积累，却无声无息地影响了之后的 Windows 10 乃至 <a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=278362565&content_type=Article&match_order=1&q=Windows+11&zhida_source=entity">Windows 11</a>。从这个意义上说，它更像是微软在转型路口的一次必经之路。</p>
+<p>而这可能说明了什么，可能说明了——<strong>方向也许激进，但每一步调整都有迹可循。</strong></p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Galton Lai</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://galtonlai.github.io/2026/04/18/7600to9200_GaltonLai/">http://galtonlai.github.io/2026/04/18/7600to9200_GaltonLai/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">Galton Lai</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E6%BC%94%E5%8F%98%E5%8F%B2/">
+                                    <span class="chip bg-color">演变史</span>
+                                </a>
+                            
+                                <a href="/tags/Windows/">
+                                    <span class="chip bg-color">Windows</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">
+                                    <span class="chip bg-color">操作系统</span>
+                                </a>
+                            
+                                <a href="/tags/%E7%94%B5%E8%84%91/">
+                                    <span class="chip bg-color">电脑</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+    <div class="card" data-aos="fade-up">
+    <div id="utteranc-container" class="card-content">
+        <script src="https://utteranc.es/client.js"
+		repo="GaltonLai/galtonlai.github.io"
+        	issue-term="pathname"
+        	theme="github-light"
+        	crossorigin="anonymous"                
+	async>
+        </script>
+    </div>
+</div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2026/04/18/6000to7600_GaltonLai/">
+                    <div class="card-image">
+                        
+                        <img src="/images/pic/cover_6000to7600.png" class="responsive-img" alt="【Windows演变史】从Vista演变到Win7，Aero是怎么延续的？">
+                        
+                        <span class="card-title">【Windows演变史】从Vista演变到Win7，Aero是怎么延续的？</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2026-04-18
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%94%B5%E8%84%91%E7%B3%BB%E7%BB%9F%E7%A7%91%E6%99%AE/" class="post-category">
+                                    电脑系统科普
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%BC%94%E5%8F%98%E5%8F%B2/">
+                        <span class="chip bg-color">演变史</span>
+                    </a>
+                    
+                    <a href="/tags/Windows/">
+                        <span class="chip bg-color">Windows</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">
+                        <span class="chip bg-color">操作系统</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%94%B5%E8%84%91/">
+                        <span class="chip bg-color">电脑</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2026/04/13/SurfaceGo3BIOSissue_GaltonLai/">
+                    <div class="card-image">
+                        
+                        <img src="/images/pic/cover_SurfaceGo3BIOSissue.png" class="responsive-img" alt="【修电脑Vlog】Surface Go3更新BIOS后开机慢，如何降级BIOS？">
+                        
+                        <span class="card-title">【修电脑Vlog】Surface Go3更新BIOS后开机慢，如何降级BIOS？</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2026-04-13
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%94%B5%E8%84%91%E7%BB%B4%E4%BF%AE/" class="post-category">
+                                    电脑维修
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E4%BF%AE%E7%94%B5%E8%84%91/">
+                        <span class="chip bg-color">修电脑</span>
+                    </a>
+                    
+                    <a href="/tags/Surface/">
+                        <span class="chip bg-color">Surface</span>
+                    </a>
+                    
+                    <a href="/tags/BIOS/">
+                        <span class="chip bg-color">BIOS</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%9B%BA%E4%BB%B6%E9%97%AE%E9%A2%98/">
+                        <span class="chip bg-color">固件问题</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%BC%80%E6%9C%BA%E6%85%A2/">
+                        <span class="chip bg-color">开机慢</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2026</span>
+            
+            <a href="/about" target="_blank">Galton Lai</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">25.7k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            
+                <div class="footer-update">
+                   更新日期：2026-07-26
+                </div>
+            
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/GaltonLai" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:galtonlai705@outlook.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2462433690" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2462433690" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+    <a href="https://www.zhihu.com/people/galtonlai" class="tooltipped" target="_blank" data-tooltip="关注我的知乎: https://www.zhihu.com/people/galtonlai" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
+    </a>
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 白天和黑夜主题 -->
+<div class="stars-con">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>  
+</div>
+
+<script>
+    function switchNightMode() {
+        $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
+        setTimeout(function () {
+            $('body').hasClass('DarkMode') 
+            ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')) 
+            : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
+            
+            setTimeout(function () {
+            $('.Cuteen_DarkSky').fadeOut(1e3, function () {
+                $(this).remove()
+            })
+            }, 2e3)
+        })
+    }
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    
+
+    
+    
+    
+
+    <!-- 雪花特效 -->
+    
+
+    <!-- 鼠标星星特效 -->
+     
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/star.js"><\/script>');
+            }
+        </script>
+    
+
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
