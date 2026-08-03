@@ -4,6 +4,41 @@
   
     
     <entry>
+      <title>龙虾鲸鱼装系统？OpenClaw和DeepSeek安装Windows能信得过吗？</title>
+      <link href="/2026/08/02/OpenclawInstallWindows_GaltonLai/"/>
+      <url>/2026/08/02/OpenclawInstallWindows_GaltonLai/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="龙虾鲸鱼装系统？OpenClaw和DeepSeek安装Windows能信得过吗？"><a href="#龙虾鲸鱼装系统？OpenClaw和DeepSeek安装Windows能信得过吗？" class="headerlink" title="龙虾鲸鱼装系统？OpenClaw和DeepSeek安装Windows能信得过吗？"></a>龙虾鲸鱼装系统？OpenClaw和DeepSeek安装Windows能信得过吗？</h1><p><strong>Author:</strong> GaltonLai</p><p><strong>Date:</strong> 2026-08-02</p><p><strong>Link:</strong> <a href="https://zhuanlan.zhihu.com/p/2067371248691236985">https://zhuanlan.zhihu.com/p/2067371248691236985</a></p><h2 id="介绍语"><a href="#介绍语" class="headerlink" title="介绍语"></a><strong>介绍语</strong></h2><p>Hello，大家好。今天我来做一个实验，OpenClaw和<a href="https://zhida.zhihu.com/search?content_id=280411652&content_type=Article&match_order=1&q=DeepSeek&zhida_source=entity">DeepSeek</a>能否装系统？</p><p>首先先给大家介绍一下环境，我的电脑用的系统是<a href="https://zhida.zhihu.com/search?content_id=280411652&content_type=Article&match_order=1&q=UbuntuKylin22.04&zhida_source=entity">UbuntuKylin22.04</a>，目前已经是装好了OpenClaw了。</p><p><img src="https://picx.zhimg.com/v2-03a82e62bfdb6f9156b7d080932eeb3b_1440w.jpg"></p><p>这里我用的是Deepseek大模型。</p><p><img src="https://picx.zhimg.com/v2-df60ba6bed906ec634c85bc09fee4e3f_1440w.jpg"></p><p>在这个实验中，我打算使用手机来和AI对话，让这位龙虾，也就是OpenClaw，帮我操作这一切。</p><p><img src="https://picx.zhimg.com/v2-5993e7b3d77ac90749e3a62c75f36a4f_1440w.jpg"></p><p>再给大家介绍一下，这是一台联想笔记本，也是我们要用到的测试机，可以看到，这台笔记本系统挂了。所以这些动物们，能不能帮我装好这个系统，那现在就开始吧。</p><p><img src="https://pic2.zhimg.com/v2-8b8dc591e2606042dc0667f12a4ef2c9_1440w.jpg"></p><h2 id="正题"><a href="#正题" class="headerlink" title="正题"></a><strong>正题</strong></h2><p>在开始之前，我先测试一下这位龙虾能不能响应我，我在这里发句“你好”。</p><p>好的，他这里回应我了。</p><p><img src="https://pica.zhimg.com/v2-9accaa3d50967fa5c6d73e9d47580de2_1440w.jpg"></p><p>好！那我们现在开始。我看到电脑坏了，我肯定会下意思的说。</p><blockquote><p>我有一台电脑坏了，你能帮我修好吗？</p></blockquote><p><img src="https://pic1.zhimg.com/v2-0bee277ea0be0a7a453075375e43fcf6_1440w.jpg"></p><p>好了，他这里回复我了，问我什么电脑？硬件坏了还是软件坏了？</p><p><img src="https://pic4.zhimg.com/v2-ba43cf9e220be9bcb4d95cfc4592670f_1440w.jpg"></p><p>然后我这里补充了一句</p><blockquote><p>我有一台电脑坏了，需要重装系统，里面的系统没了，所以你能帮我修好吗？</p></blockquote><p><img src="https://pica.zhimg.com/v2-5ab170d03d5ff3daca8ce065733969b8_1440w.jpg"></p><p>然后他就问我这是什么电脑，可以指导我操作。</p><p><img src="https://picx.zhimg.com/v2-521d78b10010e0a07c18770fac4e5b23_1440w.jpg"></p><p>然后我这里我就直接说。</p><blockquote><p>是这样的，我有一台电脑坏了，我想麻烦你去搭建一台ipxe网络装机服务器，通过dhcp让这台坏掉的电脑DHCP让这台坏掉的电脑用网络引导安装<a href="https://zhida.zhihu.com/search?content_id=280411652&content_type=Article&match_order=1&q=Win10&zhida_source=entity">Win10</a>。网段是192.168.31.0，dhcp范围是50到150，iso<a href="https://zhida.zhihu.com/search?content_id=280411652&content_type=Article&match_order=1&q=%E9%95%9C%E5%83%8F%E6%96%87%E4%BB%B6&zhida_source=entity">镜像文件</a>在家目录。</p></blockquote><p><img src="https://pica.zhimg.com/v2-addac8c67fc72b14b499159b87707a6e_1440w.jpg"></p><p>然后他这里就开始了。</p><p><img src="https://pic2.zhimg.com/v2-e1f27e1634dcd8f3012dfdbc1a40b725_1440w.jpg"></p><p>他中间停了，他问我要sudo密码，我直接告诉他密码是123456。</p><p><img src="https://pic2.zhimg.com/v2-75e41d5670789aaebabb46417310912d_1440w.jpg"></p><p>他说 “好，那我就一步步搭”，那我们这里就等他搭完吧。</p><hr><p>唉！他这里报权限问题了。那我不知道他能不能自己搞定，我觉得他应该能自己搞定吧，毕竟他都拿到密码了。</p><p><img src="https://pic1.zhimg.com/v2-de377dc24224555a7e309d1f312bb8e4_1440w.jpg"></p><p>啊，对，我这里忘记跟大家说了，我已经提前准备好那个安装镜像了。这个安装镜像我放在家目录了。</p><p><img src="https://picx.zhimg.com/v2-8fd08392207902609f230af8c7c2529b_1440w.jpg"></p><p>他这里说要改那个boot的那个文件，那我就看他改成怎么样吧。</p><p><img src="https://pica.zhimg.com/v2-4af087e8fd840ddb01d00ddfe121c71a_1440w.jpg"></p><p>然后就看他一直在那跑。唉，这里报错了哦，哦，GitHub没有连上去，应该没什么问题吧？</p><p><img src="https://pic1.zhimg.com/v2-53cdfc838540cca28d77dca44b87079a_1440w.jpg"></p><p>唉，结束了，跑完了。</p><hr><p>我刚刚看到他中间有写那个自动应答文件的，然后我就在这里跟他说。</p><blockquote><p>你在这里帮我检查一下<a href="https://zhida.zhihu.com/search?content_id=280411652&content_type=Article&match_order=2&q=%E5%BA%94%E7%AD%94%E6%96%87%E4%BB%B6&zhida_source=entity">应答文件</a>，我打算激活Administrator用户，密码是123456，不要自动分区，只清空C盘。</p></blockquote><p><img src="https://pic3.zhimg.com/v2-2cf615436cfc4286ae267a40e36e7c8c_1440w.jpg"></p><p>然后他这里改好了，还挺快的。</p><p><img src="https://picx.zhimg.com/v2-ba887c1628423482db301697262a8e75_1440w.jpg"></p><blockquote><p>那我现在可以开电脑了吗？</p></blockquote><p><img src="https://pic2.zhimg.com/v2-d6b7656aa0cf20c38fe17e8371f5def5_1440w.jpg"></p><p>他这里叫我检查，我看了一下，没有什么问题了。</p><p><img src="https://pica.zhimg.com/v2-d1acc8cbb89ba66911d8c008a9441f2c_1440w.jpg"></p><blockquote><p>我这里已经检查好了，可以直接开机了吗？</p></blockquote><p><img src="https://pic2.zhimg.com/v2-aefa2ae15f6b12f736b696cd42467171_1440w.jpg"></p><p>“开！”</p><p><img src="https://pic2.zhimg.com/v2-a67010830de973ddbeb528fcfae0011b_1440w.jpg"></p><p>（那我就开了）</p><hr><h2 id="看效果"><a href="#看效果" class="headerlink" title="看效果"></a><strong>看效果</strong></h2><p>然后我这里就去开电脑了，我这里选择网络启动。</p><p><img src="https://pic2.zhimg.com/v2-fc7708c231fd3f7cb9f9be33d3cd0bd3_1440w.jpg"></p><p><img src="https://pica.zhimg.com/v2-4016900806e7b541e37432577a43c838_1440w.jpg"></p><p>但我看到这里有问题了。他这里一直重复，一直在那跑。</p><p><img src="https://pic2.zhimg.com/v2-747d57bb24c6a464074e376d20365ab5_1440w.jpg"></p><p>然后我立马去找龙虾。</p><blockquote><p>ipxe现在一直循环，进不去。</p></blockquote><p><img src="https://pic3.zhimg.com/v2-a0a6d2d66908b0d9b31ef5e8246c0c4a_1440w.jpg"></p><p>他说先别急，让我排查一下，那等他跑吧。</p><p><img src="https://pic3.zhimg.com/v2-4389ed57af73465a969fd5594a242248_1440w.jpg"></p><p>发现线索，啊，没所谓了，你帮我调好就行了。</p><p><img src="https://pica.zhimg.com/v2-ef9e438951530657c502c4505683cc34_1440w.jpg"></p><p>我看到他这里已经修复好了，但是上面报错了，不知道会不会影响，我试一下吧。</p><p><img src="https://pic4.zhimg.com/v2-83da5900f7e2089be96deaec044783e1_1440w.jpg"></p><p>不行啊，还是重复啊。</p><hr><p>后面我直接把报错信息发给他，然后他说http服务器有问题，然后说换成诊断脚本了，叫我试一下。</p><p><img src="https://pic4.zhimg.com/v2-e332c03f0b62fae915471bed822325a7_1440w.jpg"></p><p><img src="https://picx.zhimg.com/v2-37dbbaca2acbb3aeee90f89fe0c13fb5_1440w.jpg"></p><p>啊？我看到你文件都没写好吧，都语法错误了，而且你这个问号，我猜测你脚本文件写的是中文吧。</p><p><img src="https://pic3.zhimg.com/v2-ba1e7fd42a08371126b850a07b5bbfb8_1440w.jpg"></p><p>后面我叫他换文件，结果他给我换成Linux了。</p><p><img src="https://pic3.zhimg.com/v2-61c8c14c9e79b2968bfa1721e505dee4_1440w.jpg"></p><p><img src="https://pic2.zhimg.com/v2-570d9eda231c7b4b7f51630ffd652e61_1440w.jpg"></p><p>然后后面我找他找了好久，调了好久。我让他重新下载了文件，也重新叫他一次再一次的改脚本。</p><p>最后，终于成功了。</p><hr><p>然后给大家看一下这效果。看一下龙虾和Deepseek能给我们装成怎么样。</p><p><img src="https://pica.zhimg.com/v2-9e349629f6ce15a0877b0de803b05104_1440w.jpg"></p><p>哎，引导菜单出现了，现在是在加载文件了 。</p><p><img src="https://pic3.zhimg.com/v2-ce0ea4b8d8b3bf95cbb27978dc26c6bc_1440w.jpg"></p><p><img src="https://pic1.zhimg.com/v2-d122c6b6eb66a5eee086b61cde789e1a_1440w.jpg"></p><p><img src="https://pic2.zhimg.com/v2-a6506355ca9b355061d4e214ee193bc5_1440w.jpg"></p><p>成功引导安装程序</p><p>这里有点小问题，它没有自动引导安装，因为它引导的是Boot镜像里面的文件，安装程序在外面，不在里面啊，所以它点进去安装会报驱动有问题。</p><p>这个问题我让龙虾调了好久都不行。</p><p><img src="https://pic1.zhimg.com/v2-b1df537c4f3648e9471579bed6007278_1440w.jpg"></p><p>然后我让龙虾搭了一个<a href="https://zhida.zhihu.com/search?content_id=280411652&content_type=Article&match_order=1&q=smb%E6%9C%8D%E5%8A%A1&zhida_source=entity">smb服务</a>，然后把那个安装档放在那台服务器上面了。所以这里要手动<a href="https://zhida.zhihu.com/search?content_id=280411652&content_type=Article&match_order=1&q=%E6%98%A0%E5%B0%84&zhida_source=entity">映射</a>一下安装盘。</p><p><img src="https://picx.zhimg.com/v2-90402363d51187e85cdea09ffdd616f1_1440w.jpg"></p><p>好的，映射好，那就，启动网络盘里面的安装程序吧。</p><p><img src="https://picx.zhimg.com/v2-43b02a6b03e50505793416ddd593fc17_1440w.jpg"></p><p>来到这里，还是要选择要安装的语言啥的，然后下一步。</p><p><img src="https://pic2.zhimg.com/v2-a6659fb01a2240c8432fec8d56fe498b_1440w.jpg"></p><p>下一步之后，他这里就自动安装了，那我这里等他装好吧。</p><p><img src="https://pic3.zhimg.com/v2-5518f6c4c0867297dd022c32ef3e2304_1440w.jpg"></p><p><img src="https://pic1.zhimg.com/v2-a96270ff650ea3a96bd5715cf98ac3da_1440w.jpg"></p><p><img src="https://pica.zhimg.com/v2-337a1d54e9e9189d05bb85d9751e76a0_1440w.jpg"></p><p>好的，现在是进系统了，可以看到这里，我们按了下一步之后，就没有要调其他操作了，后面都是自动的了。就可以说明那个自动应答文件已经生效了。</p><p><img src="https://pic3.zhimg.com/v2-131090749c7cdb1bd57db893786bb1f0_1440w.jpg"></p><h2 id="复盘"><a href="#复盘" class="headerlink" title="复盘"></a><strong>复盘</strong></h2><p>后面我叫龙虾和deepseek把这个实验总结了。</p><p>这里用户需求，我把我的笔记本型号告诉了他，然后还跟他说要搭建服务器相关的事情，叫他去激活默认用户，然后跟他说要装在C盘，也把镜像文件告诉了他。反正我能说的我都说了。</p><p><img src="https://pica.zhimg.com/v2-2c137a5fd47694c9a6d8aebf56099010_1440w.jpg"></p><p>然后看到这里核心原理，他说他重新编译了这个<a href="https://zhida.zhihu.com/search?content_id=280411652&content_type=Article&match_order=3&q=ipxe&zhida_source=entity">ipxe</a>，然后再写了自动运行的脚本。</p><p><img src="https://pic2.zhimg.com/v2-32b19f764851cda5ff449228344068c5_1440w.jpg"></p><p>然后看到他还换了Windows的引导文件，应答文件啥的。</p><p><img src="https://pica.zhimg.com/v2-1d74c187fca6b0991d0da4bee14a9e94_1440w.jpg"></p><p>下面就设置了<a href="https://zhida.zhihu.com/search?content_id=280411652&content_type=Article&match_order=1&q=%E7%BD%91%E7%BB%9C%E5%85%B1%E4%BA%AB&zhida_source=entity">网络共享</a>。</p><p><img src="https://pica.zhimg.com/v2-cf4ebe4d56c6a812e44316e9758920a4_1440w.jpg"></p><p>啊对，这里我就要介入了，他说原本的安装程序五把直接访无法直接访问<a href="https://zhida.zhihu.com/search?content_id=280411652&content_type=Article&match_order=1&q=%E7%BD%91%E7%BB%9C%E8%B7%AF%E5%BE%84&zhida_source=entity">网络路径</a>，所以就叫我去手动映射这个路径，然后再实现全自动安装。</p><p>然后其他的就是叫我怎么做，这些东西的了。</p><p><img src="https://picx.zhimg.com/v2-515408c7875791e081ec2e9c4868dff5_1440w.jpg"></p><hr><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a><strong>总结</strong></h2><blockquote><p>这里系统装好了，所以，能信得过吗？</p></blockquote><p>我觉得如果就看这次的实验结果的话，我只能说勉强能信得过吧。毕竟目前AI还是只有局限性，还是有一些操作是要自己手动操作的。</p><p>如果全部依靠龙虾和Deepseek，我觉得应该是信不过的，因为很容易把文件搞乱。</p><p>我觉得最好就是人要和龙虾打好配合，起码人要做好监督。最好就要看清楚龙虾是怎么做的。</p><p>举个例子，安装Win10我让他编写的那个自动应答文件，我只打算去清空C盘的文件，但是如果你没有检查好，他写的应答文件是格式化整个磁盘的，一运行，可能你整个磁盘文件全没了。那这样就不好了。</p><p>所以这就是为什么要做好监督。</p><p>其实我觉得AI只是一个辅助工具。更重要的是打好配合，</p><p>这样AI才能更好的去帮助我们（装系统啥的）。</p><p>好了，这篇文章就写到这里，谢谢大家观看。</p><p>（写于2026.8.2）</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 电脑实验探究 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Windows </tag>
+            
+            <tag> 探究实验 </tag>
+            
+            <tag> 网络引导 </tag>
+            
+            <tag> 系统整活 </tag>
+            
+            <tag> GitHub </tag>
+            
+            <tag> OpenClaw </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>打造全世界都能用的公开系统？我把电脑系统装进了GitHub！</title>
       <link href="/2026/07/20/InstallOSInGitHub_GaltonLai/"/>
       <url>/2026/07/20/InstallOSInGitHub_GaltonLai/</url>
@@ -21,6 +56,8 @@
         <tags>
             
             <tag> 探究实验 </tag>
+            
+            <tag> 网络引导 </tag>
             
             <tag> 系统整活 </tag>
             
@@ -52,6 +89,8 @@
         <tags>
             
             <tag> 探究实验 </tag>
+            
+            <tag> 网络引导 </tag>
             
             <tag> 系统整活 </tag>
             
@@ -292,8 +331,6 @@
       
       <categories>
           
-          <category> 电脑实验探究 </category>
-          
           <category> 电脑系统运维 </category>
           
       </categories>
@@ -302,6 +339,8 @@
         <tags>
             
             <tag> 操作系统 </tag>
+            
+            <tag> 网络引导 </tag>
             
             <tag> Linux </tag>
             
