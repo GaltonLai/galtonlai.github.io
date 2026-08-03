@@ -49,6 +49,9 @@ Link: https://zhuanlan.zhihu.com/p/2030071541736666466">
     
 
 
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/atom-one-dark.min.css">
+
+
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
@@ -378,32 +381,7 @@ Link: https://zhuanlan.zhihu.com/p/2030071541736666466">
         <hr class="clearfix">
 
         
-
-	<!-- 代码块功能依赖 -->
-	<script type="text/javascript" src="/libs/codeBlock/codeBlockFunction.js"></script>
-
-	<!-- 代码语言 -->
-	
-	<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
-	
-
-	<!-- 代码块复制 -->
-	
-	<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
-	
-
-	<!-- 代码块收缩 -->
-	
-	<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
-	
-
         
-        <!-- 代码块折行 -->
-        <style type="text/css">
-            code[class*="language-"], pre[class*="language-"] { white-space: pre-wrap !important; }
-        </style>
-        
-
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h1 id="Surface-Go3更新BIOS后开机慢，如何降级BIOS？"><a href="#Surface-Go3更新BIOS后开机慢，如何降级BIOS？" class="headerlink" title="Surface Go3更新BIOS后开机慢，如何降级BIOS？"></a>Surface Go3更新BIOS后开机慢，如何降级BIOS？</h1><p><strong>Author:</strong> GaltonLai</p>
@@ -471,30 +449,38 @@ Link: https://zhuanlan.zhihu.com/p/2030071541736666466">
 <p><img src="https://pic3.zhimg.com/v2-10c15eed19e4a189adb44d9b4e4acc94_1440w.jpg"></p>
 <p>U盘引导系统</p>
 <p>系统进来之后连接WIFI，然后更新软件包</p>
-<p>sudo apt-get update -y &amp;&amp; sudo apt install vim msitools gcab dos2unix -y</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt-get update -y &amp;&amp; <span class="built_in">sudo</span> apt install vim msitools gcab dos2unix -y</span><br></pre></td></tr></table></figure>
+
 <p><img src="https://picx.zhimg.com/v2-06c72a7863d38e25af4c0cc6f42dae37_1440w.jpg"></p>
 <p>安装软件包</p>
 <h2 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h2><p>然后想方设法把降级要用到的文件和旧版驱动包导入进Linux系统里面，可以使用另外一个U盘传过来也可以用远程软件发送过来。</p>
 <p><img src="https://picx.zhimg.com/v2-6a52e196931ae1b79b9b2753361ab551_1440w.jpg"></p>
 <p>U盘有这2个文件</p>
-<h2 id="第五步"><a href="#第五步" class="headerlink" title="第五步"></a>第五步</h2><p>然后cd surface-uefi-firmware&#x2F;</p>
-<p>给里面的shell文件一个执行权限：chmod +x .&#x2F;surface-uefi-fireware&#x2F;repack.sh</p>
-<p>然后通过脚本把驱动包解压下来sudo .&#x2F;surface-uefi-fireware&#x2F;repack.sh (你存放的msi文件) -o <a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=273534913&content_type=Article&match_order=1&q=fwupd&zhida_source=entity">fwupd</a>ates</p>
+<h2 id="第五步"><a href="#第五步" class="headerlink" title="第五步"></a>第五步</h2><p>然后进入目录</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> surface-uefi-firmware/</span><br></pre></td></tr></table></figure>
+
+<p>给里面的shell文件一个执行权限：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">chmod</span> +x ./surface-uefi-fireware/repack.sh</span><br></pre></td></tr></table></figure>
+<p>然后通过脚本把驱动包解压下来</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> ./surface-uefi-fireware/repack.sh (你存放的msi文件) -o fwupdates</span><br></pre></td></tr></table></figure>
+
 <p>（-o 表示解压时指定的文件夹）</p>
 <p><img src="https://pica.zhimg.com/v2-d6e36f4e2fae36ab202ac2334ed5eabc_1440w.jpg"></p>
 <p>解压驱动包</p>
-<p>解压下来的树形目录：tree fwupdates&#x2F;</p>
+<p>解压下来的树形目录：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tree fwupdates/</span><br></pre></td></tr></table></figure>
+
 <p><img src="https://pic1.zhimg.com/v2-abe522269364880ac4436029bda64cc8_1440w.jpg"></p>
 <p>解压下来的树形目录</p>
 <p>然后关闭数字签名：</p>
-<p>sudo vim &#x2F;etc&#x2F;fwupd&#x2F;daemon.conf（有的系统是 fwupd.conf）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> vim /etc/fwupd/daemon.conf</span><br><span class="line"><span class="comment">#（有的系统是 fwupd.conf）</span></span><br></pre></td></tr></table></figure>
+
 <p>把OnlyTrusted&#x3D;true修改成OnlyTrusted&#x3D;false</p>
 <p><img src="https://pic3.zhimg.com/v2-2b24c0f1a5bb20fa7a1be73d0b683ccc_1440w.jpg"></p>
 <p>关闭数字签名检验</p>
 <p>然后是重头戏</p>
-<p>for f in fwupdates&#x2F;*; do</p>
-<p>sudo fwupdmgr install –allow-older –allow-reinstall –no-reboot-check “$f”</p>
-<p>done</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> f <span class="keyword">in</span> fwupdates/*; <span class="keyword">do</span></span><br><span class="line">    <span class="built_in">sudo</span> fwupdmgr install --allow-older --allow-reinstall --no-reboot-check <span class="string">&quot;<span class="variable">$f</span>&quot;</span></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+
 <p>命令解析：这里是开始用fwupd来安装，我这里是写一条for循环结构，然后遍历安装每一个cab文件。</p>
 <p>但是其实也可以只装UEFI相关的这个文件，只不过不知道会不会出现旧版固件不兼容新版驱动的情况，所以我觉得稳妥一点就是全部遍历装一遍。</p>
 <p><img src="https://pic4.zhimg.com/v2-e9012751647b176ddc3fc11663a71c4f_1440w.jpg"></p>
@@ -788,6 +774,7 @@ Link: https://zhuanlan.zhihu.com/p/2030071541736666466">
 <!-- 代码块收缩 -->
 
 <script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
 
 
 

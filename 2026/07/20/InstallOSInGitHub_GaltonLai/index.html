@@ -49,6 +49,9 @@ Link: https://zhuanlan.zhihu.com/p/2062655181276320140?">
     
 
 
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/atom-one-dark.min.css">
+
+
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
@@ -378,32 +381,7 @@ Link: https://zhuanlan.zhihu.com/p/2062655181276320140?">
         <hr class="clearfix">
 
         
-
-	<!-- 代码块功能依赖 -->
-	<script type="text/javascript" src="/libs/codeBlock/codeBlockFunction.js"></script>
-
-	<!-- 代码语言 -->
-	
-	<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
-	
-
-	<!-- 代码块复制 -->
-	
-	<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
-	
-
-	<!-- 代码块收缩 -->
-	
-	<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
-	
-
         
-        <!-- 代码块折行 -->
-        <style type="text/css">
-            code[class*="language-"], pre[class*="language-"] { white-space: pre-wrap !important; }
-        </style>
-        
-
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h1 id="打造全世界都能用的公开系统？我把电脑系统装进了GitHub！"><a href="#打造全世界都能用的公开系统？我把电脑系统装进了GitHub！" class="headerlink" title="打造全世界都能用的公开系统？我把电脑系统装进了GitHub！"></a>打造全世界都能用的公开系统？我把电脑系统装进了GitHub！</h1><p><strong>Author:</strong> GaltonLai</p>
@@ -509,7 +487,7 @@ Link: https://zhuanlan.zhihu.com/p/2062655181276320140?">
 <h3 id="准备引导文件（wimboot-和-boot-wim）"><a href="#准备引导文件（wimboot-和-boot-wim）" class="headerlink" title="准备引导文件（wimboot 和 boot.wim）"></a>准备引导文件（wimboot 和 boot.wim）</h3><p>一开始我走的是 Windows 方向。我手头有一个 30MB 的 boot.wim（Windows 11 精简版内核），打算用 <code>wimboot</code> 引导它。</p>
 <p>另外，wimboot 是 iPXE 官方提供的工具，专门用来引导 Windows 的 <code>.wim</code> 镜像。</p>
 <p>我把 <code>boot.wim</code> 和 <code>wimboot</code> 一起上传到 GitHub 公开仓库，然后编写了一个简单的 <code>boot.ipxe</code> 脚本：</p>
-<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#!ipxe</span><br><span class="line">dhcp</span><br><span class="line">kernel https://raw.githubusercontent.com/.../wimboot</span><br><span class="line">initrd https://raw.githubusercontent.com/.../boot.wim boot.wim</span><br><span class="line">boot</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">!ipxe</span></span><br><span class="line">dhcp</span><br><span class="line">kernel https://raw.githubusercontent.com/.../wimboot</span><br><span class="line">initrd https://raw.githubusercontent.com/.../boot.wim boot.wim</span><br><span class="line">boot</span><br></pre></td></tr></table></figure>
 
 <p>然后通过Git上传了文件。</p>
 <p><img src="https://pica.zhimg.com/v2-c6e1052d10a1046b31e63818ac8ae544_1440w.jpg"></p>
@@ -945,6 +923,7 @@ Link: https://zhuanlan.zhihu.com/p/2062655181276320140?">
 <!-- 代码块收缩 -->
 
 <script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
 
 
 

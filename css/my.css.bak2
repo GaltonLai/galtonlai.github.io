@@ -1,0 +1,34 @@
+/* Here is your custom css styles. */
+/* 强制覆盖代码块背景，去掉红黄绿按钮 */
+.code-toolbar .mac-window, 
+.highlight-wrap .window-bar,
+pre code::before {
+    display: none !important;
+}
+pre, code {
+    background: #2d2d2d !important; /* 强制设为深色背景 */
+    color: #ccc !important;
+}
+/* 1. 彻底消灭行号和代码区各自画出的 Mac 窗口圆点 */
+figure.highlight::before,
+figure.highlight td.gutter::before,
+figure.highlight td.code::before,
+figure.highlight table td::before {
+    display: none !important;
+    content: none !important; /* 确保伪元素完全消失 */
+}
+
+/* 2. 修复表格布局导致的背景颜色断层 (让整体变成一个完整的黑底) */
+figure.highlight table,
+figure.highlight td.gutter,
+figure.highlight td.code {
+    background-color: #2d2d2d !important;
+}
+
+/* 3. 美化行号：去掉多余装饰，颜色变浅，靠左排列 */
+figure.highlight td.gutter pre {
+    color: #7d7d7d !important;
+    background: transparent !important;
+    border: none !important;
+    padding-right: 10px !important; /* 让行号和代码之间留点空隙 */
+}

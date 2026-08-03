@@ -1,0 +1,35 @@
+/* 1. 彻底消灭行号和代码区各自画出的 Mac 窗口圆点 */
+figure.highlight::before,
+figure.highlight td.gutter::before,
+figure.highlight td.code::before {
+    display: none !important;
+    content: none !important;
+}
+
+/* 2. 修复表格布局导致的背景颜色断层 */
+figure.highlight table,
+figure.highlight td.gutter,
+figure.highlight td.code {
+    background-color: #2d2d2d !important;
+}
+
+/* 3. 美化行号：颜色变浅，靠左排列 */
+figure.highlight td.gutter pre {
+    color: #7d7d7d !important;
+    /* background: transparent !important;
+    border: none !important;
+    padding-right: 10px !important; */
+}
+
+/* 4. 代码块深色背景（⚠️ 重要变化：去掉了强制颜色，让原生语法高亮生效，文字不再是深蓝色） */
+figure.highlight td.code pre code {
+    background: #2d2d2d !important;
+    /* 删掉了 color: #ccc !important; 这行 */
+}
+
+/* 5. 隐藏左侧行号上方的图标，彻底解决左右按钮重叠问题 */
+figure.highlight td.gutter .code_copy,
+figure.highlight td.gutter .code-expand,
+figure.highlight td.gutter .code_lang {
+    display: none !important;
+}
